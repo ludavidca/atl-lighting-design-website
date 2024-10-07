@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header class="no-scrollbar">
+  <div class="flex flex-col min-h-screen">
+    <header class="no-scrollbar">
       <nav class="flex flex-row w-full absolute z-20 bg-gradient-to-b from-black/50 via-[rgba(28,28,28,0.20)] to-[rgba(37,37,37,0.00)]">
         <div class="w-1/2 pl-20 py-5">
           <RouterLink to="/" ><img alt="Vue logo" src="@/assets/logo.svg"/></RouterLink>
@@ -16,6 +16,40 @@ import HelloWorld from './components/HelloWorld.vue'
           <RouterLink to="/contact" class="text-white text-lg">Contact</RouterLink>
         </div>
       </nav>
-  </header>
-  <RouterView />
+    </header>
+
+    <main class="flex-grow">
+      <RouterView />
+    </main>
+
+    <footer class="bg-black py-8 mt-auto">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap w-[full] items-start gap-8 relative">
+          <div class="w-full h-px bg-white" />
+          <div class="flex-1 text-white">
+            <p class="font-medium text-white">Shanghai, China</p>
+            <p class="font-medium text-white">Xi'an, China</p>
+            <p class="font-medium text-white">Calgary, Canada</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <div>
+              <p class="font-medium text-white mb-1">Connect with us:</p>
+              <p class=" text-white">atl@188.com</p>
+            </div>
+            <p class="text-white text-sm">© 2024 ATL Lighting Design</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
+
+<style scoped>
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+</style>

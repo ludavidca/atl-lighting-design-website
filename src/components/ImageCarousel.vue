@@ -1,34 +1,47 @@
 <template>
-  <div class="relative">
-    <slot :currentSlide="currentSlide" />
+  <div class="relative w-full h-full">
+      <slot :currentSlide="currentSlide" />
+    </div>
     <!-- Navigation -->
-    <div v-if="navEnabled" class="absolute inset-0 flex items-center justify-between p-4">
-      <button @click="prevSlide" class="p-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-        <i class="fas fa-chevron-left"></i>
+    <div v-if="navEnabled" class="absolute inset-0 flex items-center justify-between px-[10%] pointer-events-none">
+      <button
+        @click="prevSlide"
+        class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none pointer-events-auto"
+      >
+        <svg width="28" height="48" viewBox="0 0 28 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 44L4 24L24 4" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
-      <button @click="nextSlide" class="p-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-        <i class="fas fa-chevron-right"></i>
+      <button
+        @click="nextSlide"
+        class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none pointer-events-auto"
+      >
+        <div class="rotate-180">
+          <svg width="28" height="48" viewBox="0 0 28 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 44L4 24L24 4" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
       </button>
     </div>
     <!-- Pagination -->
-    <div v-if="paginationEnabled" class="absolute bottom-4 left-0 right-0">
+    <div v-if="paginationEnabled" class="absolute bottom-[24%] left-0 right-0 pointer-events-none">
       <div class="flex items-center justify-center gap-2">
         <button
           v-for="(slide, index) in slideCount"
           :key="index"
           @click="goToSlide(index)"
           :class="[
-            'w-3 h-3 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
-            index + 1 === currentSlide ? 'bg-indigo-600' : 'bg-white'
+            'w-3 h-3 rounded-full focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 pointer-events-auto',
+            index + 1 === currentSlide ? 'bg-slate-400' : 'bg-white'
           ]"
         ></button>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
 import { ref, onMounted } from "vue";
+import bigArrow from "../assets/ui/bigArrow.svg";
 
 export default {
   props: {

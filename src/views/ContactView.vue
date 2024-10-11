@@ -12,7 +12,7 @@ const contacts = ref([
   },
   {
     title: "ATL International Lighting Design Inc.",
-    address: "Suite 340, 600 Crowfoot Crescent NW<br>Calgary, AB, Canada T3G 0B4",
+    address: "Suite 340, 600 Crowfoot Crescent NW<br>Calgary, AB, Canada T3G 0B4<br><br>",
   },
 ]);
 </script>
@@ -20,12 +20,12 @@ const contacts = ref([
 <template>
   <div class="bg-black text-white font-sans min-h-screen">
     <div class="container mx-auto px-4 py-8">
-      <h1 class="text-4xl text-center mb-8 pt-[5%]">Contacts</h1>
+      <h1 class="text-4xl text-center mb-8 pt-[5%]">Contact Us</h1>
       
-      <hr class="border-t border-white mb-12">
+      <hr class="border-t-2 border-white mt-6  pb-10">
 
       <div class="w-[90%] justify-center mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div v-for="contact in contacts" :key="contact.title" class="flex flex-col">
           <img src="../assets/CarouselImages/1.svg" :alt="contact.title" class="w-full h-64 object-cover mb-4">
           <h2 class="text-2xl font-bold mb-2">{{ contact.title }}</h2>

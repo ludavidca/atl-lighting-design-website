@@ -22,16 +22,16 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterView />
     </main>
 
-    <footer class="bg-black py-8 mt-auto">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-wrap w-[full] items-start gap-8 relative">
-          <div class="w-full h-px bg-white" />
-          <div class="flex-1 text-white">
+    <footer class="flex flex-col  bg-black py-8 mt-auto">
+      <div class="mx-[5%] px-4">
+        <div class="flex flex-wrap items-start gap-8 relative">
+          <div class="w-full h-[2px] bg-white" />
+          <div class="flex-1 text-white ml-5">
             <p class="font-medium text-white">Shanghai, China</p>
             <p class="font-medium text-white">Xi'an, China</p>
             <p class="font-medium text-white">Calgary, Canada</p>
           </div>
-          <div class="flex flex-col items-start gap-2">
+          <div class="flex flex-col items-start gap-2 mr-5">
             <div>
               <p class="font-medium text-white mb-1">Connect with us:</p>
               <p class=" text-white">atl@188.com</p>

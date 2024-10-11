@@ -8,6 +8,7 @@ import image2 from '../assets/CarouselImages/2.svg'
 import image3 from '../assets/CarouselImages/3.svg'
 
 const carouselSlides = [image1, image2, image3]
+
 </script>
 
 <template>
@@ -31,7 +32,7 @@ const carouselSlides = [image1, image2, image3]
     </div>
 
     <div>
-        <img src="../assets/ui/bigLine.svg" class="w-full pt-4 px-[10%] pb-10"/>
+      <hr class="border-t-2 border-white mt-6 mx-[10%] pb-10">
     </div>
      <div class="w-[65%] h-[500px] mx-auto overflow-hidden">
     <ImageCarousel 
@@ -61,6 +62,5 @@ const carouselSlides = [image1, image2, image3]
         To illustrate the culture of Guanyin, a variety of lighting techniques are used to precisely exhibit Buddhist art works and highlight traditional Chinese architectural elements.
     </p>
     </div>
-
   </main>
 </template>

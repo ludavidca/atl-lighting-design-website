@@ -95,7 +95,7 @@ const values = ref([
           <img src="../assets/HomePage/designers.svg"/>
         </div>
           <div className="w-1/4">
-            <p className=" flex flex-col top-0 left-0 font-normal text-transparent text-5xl tracking-[0] leading-[normal]">
+            <div className=" flex flex-col top-0 left-0 font-normal text-transparent text-5xl tracking-[0] leading-[normal]">
               
               <div>
               <span className="text-[#d91214]">20+</span>
@@ -107,7 +107,7 @@ const values = ref([
               <span className="text-[#d91214]">300+</span>
               <span className="text-white"> Projects</span>
               </div>
-            </p>
+            </div>
         </div>
       </div>
       </div>

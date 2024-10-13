@@ -34,7 +34,7 @@ const values = ref([
     <ImageCarousel 
       :navigation="false"
       :pagination="false"
-      :startAutoPlay="false"
+      :startAutoPlay="true"
       :timeout="5000"
       v-slot="{ currentSlide }"
     >
@@ -91,25 +91,27 @@ const values = ref([
           Our Principal Designers
         </h1>
         <div class="flex flex-row items-center justify-center">
-        <div class="w-3/4">
-          <img src="../assets/HomePage/designers.svg"/>
-        </div>
-          <div className="w-1/4">
-            <div className=" flex flex-col top-0 left-0 font-normal text-transparent text-5xl tracking-[0] leading-[normal]">
-              
-              <div>
-              <span className="text-[#d91214]">20+</span>
-              <span className="text-white"> People <br /></span>
-              </div>
-              <div><span className="text-[#d91214]">50+</span>
-              <span className="text-white"> Awards </span></div>
-              <div>
-              <span className="text-[#d91214]">300+</span>
-              <span className="text-white"> Projects</span>
-              </div>
-            </div>
-        </div>
+  <div class="w-[70%]">
+    <img src="../assets/HomePage/designers.svg" />
+  </div>
+  <div class="ml-[5%] w-1/4 flex flex-col items-start justify-center">
+    <div class="font-normal text-transparent text-5xl tracking-[0] leading-normal space-y-4">
+      <div>
+        <span class="text-[#d91214]">20+</span>
+        <span class="text-white"> People <br /></span>
       </div>
+      <div>
+        <span class="text-[#d91214]">50+</span>
+        <span class="text-white"> Awards </span>
+      </div>
+      <div>
+        <span class="text-[#d91214]">300+</span>
+        <span class="text-white"> Projects</span>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
   </div>
    </div>

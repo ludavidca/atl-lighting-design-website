@@ -5,29 +5,35 @@ const contacts = ref([
   {
     title: "Shanghai ATL Lighting Design Company",
     address: "Building 18, 333 Baotun Road<br>Huangpu District<br>Shanghai, China 200011",
+    image: "src/assets/Contact/shanghai.svg",
   },
   {
     title: "Shanghai ATL Lighting Design Xi'an Branch",
     address: "2203, Unit 1, Building 7<br>Shuangwei Yingbin Square, Wei Yang Road<br>Xi'an, China 710018",
+    image: "src/assets/Contact/xian.svg",
   },
   {
     title: "ATL International Lighting Design Inc.",
     address: "Suite 340, 600 Crowfoot Crescent NW<br>Calgary, AB, Canada T3G 0B4<br><br>",
+    image: "src/assets/Contact/calgary.svg",
   },
 ]);
 </script>
 
 <template>
   <div class="bg-black text-white font-sans min-h-screen">
-    <div class="container mx-auto px-4 py-8">
-      <h1 class="text-4xl text-center mb-8 pt-[5%]">Contact Us</h1>
+    <div class="container mx-auto py-8">
+     <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4">
+      <h1 class="text-5xl text-center">Contact Us</h1>
+    </div>
       
-      <hr class="border-t-2 border-white mt-6  pb-10">
+      <hr class="border-t-2 border-white mt-6 mx-[5%] mb-10">
+
 
       <div class="w-[90%] justify-center mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div v-for="contact in contacts" :key="contact.title" class="flex flex-col">
-          <img src="../assets/CarouselImages/1.svg" :alt="contact.title" class="w-full h-64 object-cover mb-4">
+          <img :src="contact.image" :alt="contact.title" class="w-full h-64 object-cover mb-4">
           <h2 class="text-2xl font-bold mb-2">{{ contact.title }}</h2>
           <p class="mb-4" v-html="contact.address"></p>
           <p>
@@ -38,7 +44,7 @@ const contacts = ref([
       </div>
       
       <div class="flex flex-col md:flex-row mt-16 items-center mb-10">
-        <img src="../assets/CarouselImages/1.svg" alt="Careers" class="w-full h-[300px] md:w-2/3  object-cover mb-8 md:mb-0">
+        <img src="../assets/Contact/careers.svg" alt="Careers" class="w-full h-[250px] md:w-2/3  object-cover mb-8 md:mb-0">
         <div class="flex w-1/3 items-center justify-center mx-auto">
           <div>
           <h2 class="text-4xl mb-4">Careers</h2>

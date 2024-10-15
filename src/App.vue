@@ -24,8 +24,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterView />
     </main>
 
-    <footer class="flex flex-col  bg-black py-8 mt-auto">
-      <div class="mx-[5%] px-4">
+    <footer class="flex flex-col bg-black py-8 mt-auto">
+      <div class="mx-[5%]">
         <div class="flex flex-wrap items-start gap-8 relative">
           <div class="w-full h-[2px] bg-white" />
           <div class="flex-1 text-white ml-5">

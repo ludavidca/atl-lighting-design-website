@@ -11,7 +11,7 @@ const carouselSlides = [image1, image2, image3];
 const values = ref([
   {
     title: "People-Centric",
-    text: "People are the key element of ATL. We rigorously pursuing end users' excellent experience and optimze owners' benefits.",
+    text: "People are the central element of ATL. We rigorously pursue end usre experience and optimze owner benefits.",
     imagelink: "src/assets/HomePage/peopleCentric.svg",
   },
   {
@@ -47,7 +47,7 @@ const values = ref([
     </div>
 
 
-    <div class="px-[10%] pt-20 overflow-y-hidden w-[100%]">
+    <div class="px-[5%] pt-20 overflow-y-hidden w-[100%]">
     <!-- This is the Our Company Intro -->
     <div class="flex flex-row w-fit items-center justify-center relative translate-x-[-9%]">
       <div class="z-10 w-1/2 translate-x-[10%] p-[4%] bg-black">
@@ -70,7 +70,7 @@ const values = ref([
         <h1 class="text-5xl text-white ">
           Our Values
         </h1>
-        <div class="grid grid-cols-3 gap-[10%] w-full pt-10">
+        <div class="grid grid-cols-3 gap-12 w-full pt-10">
           <div v-for="value in values" :key="value.title">
             <div class="border-white border-2 p-6 flex-col">
               <h1 class="text-2xl text-white">{{value.title}}</h1>

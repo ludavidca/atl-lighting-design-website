@@ -6,23 +6,29 @@ const contacts = ref([
     title: "Shanghai ATL Lighting Design Company",
     address: "Building 18, 333 Baotun Road<br>Huangpu District<br>Shanghai, China 200011",
     image: "src/assets/Contact/shanghai.svg",
+    email:"mailto:atl@188.com",
+    tel:"tel+862152137649",
   },
   {
     title: "Shanghai ATL Lighting Design Xi'an Branch",
     address: "2203, Unit 1, Building 7<br>Shuangwei Yingbin Square, Wei Yang Road<br>Xi'an, China 710018",
     image: "src/assets/Contact/xian.svg",
+    email:"mailto:atllightxa@163.com",
+    tel:"tel:+8613585700424",
   },
   {
     title: "ATL International Lighting Design Inc.",
     address: "Suite 340, 600 Crowfoot Crescent NW<br>Calgary, AB, Canada T3G 0B4<br><br>",
     image: "src/assets/Contact/calgary.svg",
+    email: "mailto:zlu@live.ca",
+    tel:"tel:+15879664293",
   },
 ]);
 </script>
 
 <template>
   <div class="bg-black text-white font-sans min-h-screen">
-    <div class="container mx-auto py-8">
+    <div class="mx-auto py-8">
      <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4">
       <h1 class="text-5xl text-center">Contact Us</h1>
     </div>
@@ -37,8 +43,8 @@ const contacts = ref([
           <h2 class="text-2xl font-bold mb-2">{{ contact.title }}</h2>
           <p class="mb-4" v-html="contact.address"></p>
           <p>
-            <a href="#" class="underline mr-4">Email</a>
-            <a href="#" class="underline">Telephone</a>
+            <a :href="contact.email" class="underline mr-4 text-white">Email</a>
+            <a :href="contact.tel" class="underline text-white">Telephone</a>
           </p>
         </div>
       </div>
@@ -49,8 +55,8 @@ const contacts = ref([
           <div>
           <h2 class="text-4xl mb-4">Careers</h2>
           <p>
-            <a href="#" class="underline mr-4">Email</a>
-            <a href="#" class="underline">Telephone</a>
+            <a href="mailto:hr@atl-design.com" class="underline mr-4">Email</a>
+            <a href="+8602152137649" class="underline">Telephone</a>
           </p>
         </div>
         </div>

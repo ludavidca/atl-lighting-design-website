@@ -73,9 +73,10 @@ const values = ref([
         <div class="grid grid-cols-3 gap-12 w-full pt-10">
           <div v-for="value in values" :key="value.title">
             <div class="border-white border-2 p-6 flex-col">
-              <h1 class="text-2xl text-white">{{value.title}}</h1>
+              <h1 class="text-3xl text-white">{{value.title}}</h1>
               <div class="w-full h-[2px] bg-white my-3" />
-              <p class="text-white pb-6">{{ value.text }}</p>
+               <!-- Add Colors for values??  -->
+              <p class="text-white text-lg pb-6">{{ value.text }}</p>
               
             </div>
             <img :src="value.imagelink" class="w-full pt-20">

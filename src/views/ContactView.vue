@@ -30,7 +30,7 @@ const contacts = ref([
   <div class="bg-black text-white font-sans min-h-screen">
     <div class="mx-auto py-8">
      <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4">
-      <h1 class="text-5xl text-center">Contact Us</h1>
+      <h1 class="text-5xl text-center">Our Offices</h1>
     </div>
       
       <hr class="border-t-2 border-white mt-6 mx-[5%] mb-10">

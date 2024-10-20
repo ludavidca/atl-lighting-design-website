@@ -16,7 +16,7 @@ const values = ref([
   },
   {
     title: 'Purpose-Driven',
-    text: 'The design focuses on the purpose of the architecture, and highlights each architectural characteristic.',
+    text: 'The lighting design focuses on the purpose of the architecture, and highlights each of its unique characteristic.',
     imagelink: '/HomePage/purposeDriven.svg'
   },
   {
@@ -29,6 +29,9 @@ const values = ref([
 
 <template>
   <main class="bg-black overflow-x-hidden">
+    <div className="absolute bottom-[30%] right-[10%] z-10 text-white text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-xl shadow-3xl">
+      Lighting Connects Us with the World ©​
+    </div>
     <div class="w-screen h-screen">
       <ImageCarousel
         :navigation="false"

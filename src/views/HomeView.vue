@@ -11,7 +11,7 @@ const carouselSlides = [image1, image2, image3];
 const values = ref([
   {
     title: "People-Centric",
-    text: "People are the central element of ATL. We rigorously pursue end usre experience and optimze owner benefits.",
+    text: "People are the central element of ATL. We rigorously pursue end user experience and optimize owner benefits.",
     imagelink: "src/assets/HomePage/peopleCentric.svg",
   },
   {
@@ -25,6 +25,7 @@ const values = ref([
     imagelink: "src/assets/HomePage/sustainability.svg",
   },
 ]);
+
 
 </script>
 
@@ -75,13 +76,10 @@ const values = ref([
             <div class="border-white border-2 p-6 flex-col">
               <h1 class="text-3xl text-white">{{value.title}}</h1>
               <div class="w-full h-[2px] bg-white my-3" />
-               <!-- Add Colors for values??  -->
               <p class="text-white text-lg pb-6">{{ value.text }}</p>
-              
             </div>
             <img :src="value.imagelink" class="w-full pt-20">
           </div>
-          
         </div>
       </div>
     </div>

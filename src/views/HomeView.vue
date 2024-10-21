@@ -5,7 +5,7 @@ import ImageCarousel from '../components/ImageCarousel.vue'
 import Slide from '../components/Slide.vue'
 
 const carouselSlides = [
-  'H',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media',
   'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media',
   'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
   'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F4.jpg?alt=media',

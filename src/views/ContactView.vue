@@ -5,7 +5,8 @@ const contacts = ref([
   {
     title: 'Shanghai ATL Lighting Design Company',
     address: 'Building 18, 333 Baotun Road<br>Huangpu District<br>Shanghai, China 200011',
-    image: '/Contact/shanghai.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/Contact%2Fshanghai.svg?alt=media',
     email: 'mailto:atl@188.com',
     tel: 'tel+862152137649'
   },
@@ -13,14 +14,16 @@ const contacts = ref([
     title: "Shanghai ATL Lighting Design Xi'an Branch",
     address:
       "2203, Unit 1, Building 7<br>Shuangwei Yingbin Square, Wei Yang Road<br>Xi'an, China 710018",
-    image: '/Contact/xian.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/Contact%2Fxian.svg?alt=media',
     email: 'mailto:atllightxa@163.com',
     tel: 'tel:+8613585700424'
   },
   {
     title: 'ATL International Lighting Design Inc.',
     address: 'Suite 340, 600 Crowfoot Crescent NW<br>Calgary, AB, Canada T3G 0B4<br><br>',
-    image: '/Contact/calgary.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/Contact%2Fcalgary.svg?alt=media',
     email: 'mailto:zlu@live.ca',
     tel: 'tel:+15879664293'
   }
@@ -51,7 +54,7 @@ const contacts = ref([
 
         <div class="flex flex-col md:flex-row mt-16 items-center mb-10">
           <img
-            src="/Contact/careers.svg"
+            src="https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/Contact%2Fcareers.svg?alt=media"
             alt="Careers"
             class="w-full h-[250px] md:w-2/3 object-cover mb-8 md:mb-0"
           />

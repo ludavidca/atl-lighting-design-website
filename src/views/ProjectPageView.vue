@@ -3,9 +3,9 @@
 import { ref } from 'vue'
 import ImageCarousel from '../components/ImageCarousel.vue'
 import Slide from '../components/Slide.vue'
-import image1 from '/CarouselImages/1.svg'
-import image2 from '/CarouselImages/2.svg'
-import image3 from '/CarouselImages/3.svg'
+import image1 from 'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media'
+import image2 from 'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media'
+import image3 from 'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media'
 
 const carouselSlides = [image1, image2, image3]
 </script>

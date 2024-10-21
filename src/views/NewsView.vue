@@ -4,13 +4,15 @@ import { ref } from 'vue'
 const news = ref([
   {
     title: 'ATL Shanghai New Office',
-    image: '/Contact/shanghai.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F9.jpg?alt=media',
     date: 'Jun 28th, 2020',
     text: 'ATL Shanghai moved into an iconic building located in the Urban Best Practice Area on June 28, 2020. As a green building showcase, the new office building is the Alsace Pavilion during Expo Shanghai 2010. Equipped with a water curtained solar panel on the south facade, the building effectively utilizes green energy upon the changes of outdoor temperature and sunlight intensity. Inside the building, a Human Centric Lighting system demonstrates the cutting-edge lighting technology to maximize energy saving and achieve the highest standard of Well Building V2.'
   },
   {
     title: 'ATL Shanghai New Office',
-    image: '/Contact/shanghai.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F9.jpg?alt=media',
     date: 'Jun 28th, 2020',
     text: 'ATL Shanghai moved into an iconic building located in the Urban Best Practice Area on June 28, 2020. As a green building showcase, the new office building is the Alsace Pavilion during Expo Shanghai 2010. Equipped with a water curtained solar panel on the south facade, the building effectively utilizes green energy upon the changes of outdoor temperature and sunlight intensity. Inside the building, a Human Centric Lighting system demonstrates the cutting-edge lighting technology to maximize energy saving and achieve the highest standard of Well Building V2.'
   }

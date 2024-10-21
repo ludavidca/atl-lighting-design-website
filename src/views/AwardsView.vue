@@ -4,7 +4,8 @@ import { ref } from 'vue'
 const awardprojects = ref([
   {
     title: 'Guanyin Altar',
-    image: '/CarouselImages/3.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
     awards: [
       '1st Prize of Outdoor Lighting Design – CIES 2022',
       '1st Prize of Outdoor Lighting Design – CIES 2022',
@@ -13,7 +14,8 @@ const awardprojects = ref([
   },
   {
     title: 'Guanyin Altar',
-    image: '/CarouselImages/3.svg',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
     awards: ['1st Prize of Outdoor Lighting Design – CIES 2022']
   }
 ])

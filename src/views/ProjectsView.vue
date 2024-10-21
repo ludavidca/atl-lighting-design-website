@@ -6,49 +6,50 @@ const projects = ref([
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/1.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media'
   },
   {
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/2.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media'
   },
   {
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/3.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media'
   },
   {
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/1.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media'
   },
   {
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/2.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media'
   },
   {
     title: 'Guanyin Altar',
     year: 2024,
     location: 'ZhouShan City, China',
-    image: '/CarouselImages/3.svg'
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media'
   }
 ])
 
 const isDropdownOpen = ref(false)
 const selectedCategory = ref('Arts & Culture')
 
-const categories = [
-  'Arts & Culture',
-  'City & Landscape',
-  'Commercial',
-  'Hospitality'
-]
+const categories = ['Arts & Culture', 'City & Landscape', 'Commercial', 'Hospitality']
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value
@@ -65,7 +66,10 @@ const selectCategory = (category: string) => {
     <div class="py-8">
       <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4 relative">
         <div class="relative group">
-          <button @click="toggleDropdown" class="flex items-center text-5xl hover:text-gray-300 transition-colors duration-200">
+          <button
+            @click="toggleDropdown"
+            class="flex items-center text-5xl hover:text-gray-300 transition-colors duration-200"
+          >
             {{ selectedCategory }}
             <img
               src="/ui/dropdown.svg"
@@ -82,10 +86,13 @@ const selectCategory = (category: string) => {
             leave-from-class="opacity-100 translate-y-0"
             leave-to-class="opacity-0 translate-y-1"
           >
-            <div v-if="isDropdownOpen" class="absolute left-0 w-full bg-gray-900 rounded-md shadow-lg z-10 overflow-hidden">
+            <div
+              v-if="isDropdownOpen"
+              class="absolute left-0 w-full bg-gray-900 rounded-md shadow-lg z-10 overflow-hidden"
+            >
               <ul class="py-2">
-                <li 
-                  v-for="category in categories" 
+                <li
+                  v-for="category in categories"
                   :key="category"
                   @click="selectCategory(category)"
                   class="px-4 py-2 hover:bg-gray-800 cursor-pointer transition-colors duration-200 text-lg"

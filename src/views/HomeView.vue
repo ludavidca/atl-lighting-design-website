@@ -3,33 +3,46 @@
 import { ref } from 'vue'
 import ImageCarousel from '../components/ImageCarousel.vue'
 import Slide from '../components/Slide.vue'
-import image1 from '/CarouselImages/1.svg'
-import image2 from '/CarouselImages/2.svg'
-import image3 from '/CarouselImages/3.svg'
 
-const carouselSlides = [image1, image2, image3]
+const carouselSlides = [
+  'H',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F4.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F5.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F6.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F7.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F8.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F9.jpg?alt=media',
+  'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F10.jpg?alt=media'
+]
 const values = ref([
   {
     title: 'People-Centric',
     text: 'People are the central element of ATL. We rigorously pursue end user experience and optimize owner benefits.',
-    imagelink: '/HomePage/peopleCentric.svg'
+    imagelink:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/HomePage%2FpeopleCentric.svg?alt=media&token=8c6dd513-2a57-4590-9bb2-6f9622c1309f'
   },
   {
     title: 'Purpose-Driven',
     text: 'The lighting design focuses on the purpose of the architecture, and highlights each of its unique characteristic.',
-    imagelink: '/HomePage/purposeDriven.svg'
+    imagelink:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/HomePage%2FpurposeDriven.svg?alt=media&token=2d096be3-4e6a-415a-b35d-533f41f07cac'
   },
   {
     title: 'Sustainability',
     text: 'ATL contributes to a sustainable world by continuously adopting cutting-edge and energy efficient technology',
-    imagelink: '/HomePage/sustainability.svg'
+    imagelink:
+      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/HomePage%2Fsustainability.svg?alt=media&token=39499327-b64e-4905-9965-35769931b2f2'
   }
 ])
 </script>
 
 <template>
   <main class="bg-black overflow-x-hidden">
-    <div className="absolute bottom-[30%] right-[10%] z-10 text-white text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-xl shadow-3xl">
+    <div
+      className="absolute bottom-[30%] right-[10%] z-10 text-white text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-xl shadow-3xl"
+    >
       Lighting Connects Us with the World ©​
     </div>
     <div class="w-screen h-screen">
@@ -51,7 +64,7 @@ const values = ref([
     <div class="px-[5%] pt-20 overflow-y-hidden w-[100%]">
       <!-- This is the Our Company Intro -->
       <div class="flex flex-row w-fit items-center justify-center relative translate-x-[-9%]">
-        <div class="z-10 w-1/2 translate-x-[10%] p-[4%] bg-black">
+        <div class="z-10 w-full translate-x-[10%] p-[4%] bg-black">
           <h1 class="text-5xl text-white pb-4">Our Company</h1>
           <hr class="border-t-2 border-white mt-2 pb-2" />
           <p class="text-md text-white">
@@ -64,7 +77,7 @@ const values = ref([
         </div>
         <div>
           <img
-            src="/CarouselImages/3.svg"
+            src="https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media&token=fb2e62ad-4299-4fc8-91d4-3b91ecfb2bd0"
             class="w-full object-cover object-center overflow-y-hidden"
           />
         </div>
@@ -92,7 +105,9 @@ const values = ref([
           <h1 class="text-5xl text-white pb-10">Our Principal Designers</h1>
           <div class="flex flex-row items-center justify-center">
             <div class="w-[70%]">
-              <img src="/HomePage/designers.svg" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/HomePage%2Fdesigners.svg?alt=media&token=bc4b08d4-f995-47c7-9e73-f8f067a0b636"
+              />
             </div>
             <div class="ml-[5%] w-1/4 flex flex-col items-start justify-center">
               <div

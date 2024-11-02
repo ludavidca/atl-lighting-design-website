@@ -1,9 +1,25 @@
 <script setup lang="ts">
 import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { ref, onMounted, onUnmounted } from 'vue';
 import { computed } from 'vue'
 
 const route = useRoute()
 const isActive = (path: string) => computed(() => route.path === path)
+const isMobile = ref(false);
+
+const handleResize = () => {
+  isMobile.value = window.matchMedia('(max-width: 768px)').matches;
+};
+
+onMounted(() => {
+  handleResize(); // Check on mount
+  window.addEventListener('resize', handleResize); // Listen for screen size changes
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize); // Clean up the event listener
+});
+
 </script>
 
 <template>
@@ -11,10 +27,17 @@ const isActive = (path: string) => computed(() => route.path === path)
     <div class="flex flex-col">
       <header class="no-scrollbar">
         <nav class="flex flex-row w-full absolute z-20 bg-gradient-to-b from-black/50 via-[rgba(28,28,28,0.20)] to-[rgba(37,37,37,0.00)]">
-          <div class="w-1/2 pl-20 py-5">
-            <RouterLink to="/" ><img alt="Vue logo" src="/logo.svg"/></RouterLink>
+          <div class="w-1/2 pl-5 sm:pl-20 py-5">
+            <RouterLink to="/" ><img alt="Vue logo" src="/logo.svg" class="backdrop-blur-[1px] rounded-[25%] sm:backdrop-blur-0"/></RouterLink>
           </div>
-          <div class="w-1/2 flex items-center gap-x-20 justify-end pr-20">
+          <div v-if="isMobile" class="w-1/2 flex items-center gap-x-20 justify-end pr-5 text-white">
+            <button id="hamburger" class="p-2 text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+          </button>
+          </div>
+          <div v-else class="w-1/2 flex items-center gap-x-20 justify-end pr-20">
             <RouterLink to="/projects" class="nav-link" :class="{ 'active': isActive('/projects').value }">Projects</RouterLink>
             <RouterLink to="/news" class="nav-link" :class="{ 'active': isActive('/news').value }">News</RouterLink>
             <RouterLink to="/awards" class="nav-link" :class="{ 'active': isActive('/awards').value }">Awards</RouterLink>
@@ -24,7 +47,7 @@ const isActive = (path: string) => computed(() => route.path === path)
       </header>
     </div>
 
-    <main class="flex-grow">
+    <main class="flex-grow bg-black">
       <RouterView />
     </main>
 
@@ -52,7 +75,7 @@ const isActive = (path: string) => computed(() => route.path === path)
 
 <style scoped>
 .nav-link {
-  @apply text-white text-lg transition-colors duration-200;
+  @apply text-white text-lg transition-colors duration-200 hover:text-[#d91214];
 }
 
 .nav-link.active {

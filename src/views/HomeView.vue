@@ -41,7 +41,7 @@ const values = ref([
 <template>
   <main class="bg-black overflow-x-hidden">
     <div
-      className="absolute bottom-[30%] right-[10%] z-10 text-white text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-xl shadow-3xl"
+      className="absolute bottom-[30%] hidden sm:flex sm:right-[10%] z-10 text-white text-lg sm:text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-[25%] shadow-3xl"
     >
       Lighting Connects Us with the World ©​
     </div>

@@ -1,24 +1,37 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import type { Awards } from '@/types';
+import { computed, ref } from 'vue'
+import { useRouter } from 'vue-router';
+import data from "../../public/atl.json"
+const router = useRouter();
 
-const awardprojects = ref([
-  {
-    title: 'Guanyin Altar',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
-    awards: [
-      '1st Prize of Outdoor Lighting Design – CIES 2022',
-      '1st Prize of Outdoor Lighting Design – CIES 2022',
-      '1st Prize of Outdoor Lighting Design – CIES 2022'
-    ]
-  },
-  {
-    title: 'Guanyin Altar',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media',
-    awards: ['1st Prize of Outdoor Lighting Design – CIES 2022']
-  }
-])
+const awardsData = data.awards as Awards
+
+const awards = computed(() => {
+  return Object.entries(awardsData).map(([slug, award]) => ({
+    title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    image: award.image,
+    category: award.category,
+    linktitle: slug,
+    award: award.awards.sort((a, b) => {
+      const aYear = Number(a.split(" ").pop());
+      const bYear = Number(b.split(" ").pop());
+      return bYear - aYear;
+    }),
+    
+  })).sort((a, b) => {
+    const aYear = Number(a.award[0].split(" ").pop())
+    const bYear = Number(b.award[0].split(" ").pop())
+    return bYear - aYear;
+  })
+})
+
+const navigateToProject = (categorySlug: string, projectSlug: string) => {
+  router.push(`/projects/${categorySlug}/${projectSlug}`)
+}
+
+console.log(awards)
+
 </script>
 
 <template>
@@ -31,9 +44,10 @@ const awardprojects = ref([
       <hr class="border-t-2 border-white mt-6 mx-[5%]" />
       <div class="w-[90%] justify-center mx-auto">
         <div
-          v-for="award in awardprojects"
+          v-for="award in awards"
           :key="award.title"
           class="flex flex-row w-full h-[30vh] mb-4 mt-10"
+          @click="navigateToProject(award.category, award.linktitle)"
         >
           <div class="w-3/5 h-full overflow-hidden">
             <img :src="award.image" class="w-full h-full object-cover object-center" />
@@ -43,7 +57,7 @@ const awardprojects = ref([
               {{ award.title }}
             </div>
             <div class="text-white">
-              <div v-for="item in award.awards" :key="item" class="text-white">
+              <div v-for="item in award.award" :key="item" class="text-white">
                 {{ item }}
               </div>
             </div>

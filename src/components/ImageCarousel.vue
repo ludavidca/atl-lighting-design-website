@@ -51,7 +51,7 @@
     </button>
   </div>
   <!-- Pagination -->
-  <div v-if="paginationEnabled" class="absolute bottom-[24%] left-0 right-0 pointer-events-none">
+  <div v-if="paginationEnabled" class="absolute bottom-[20%] left-0 right-0 pointer-events-none">
     <div class="flex items-center justify-center gap-2">
       <button
         v-for="(slide, index) in slideCount"

@@ -1,63 +1,60 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import data from '../../public/atl.json'
+import type{ Project, Projects, ProjectCategory } from '@/types';
 
-const projects = ref([
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media'
-  },
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media'
-  },
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media'
-  },
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F1.jpg?alt=media'
-  },
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F2.jpg?alt=media'
-  },
-  {
-    title: 'Guanyin Altar',
-    year: 2024,
-    location: 'ZhouShan City, China',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media'
-  }
-])
+const router = useRouter()
+
+// Type assertion for data.projects
+const projectsData = data.projects as Projects
+
+const categoryMapping = {
+  'arts-and-culture': 'Arts & Culture',
+  'city-and-landscape': 'City & Landscape',
+  'commercial': 'Commercial',
+  'hospitality': 'Hospitality'
+} as const
+
+type CategoryKeys = keyof typeof categoryMapping
+type DisplayCategories = typeof categoryMapping[CategoryKeys]
 
 const isDropdownOpen = ref(false)
-const selectedCategory = ref('Arts & Culture')
+const selectedCategory = ref('Arts & Culture' as DisplayCategories)
 
-const categories = ['Arts & Culture', 'City & Landscape', 'Commercial', 'Hospitality']
+const categories = Object.values(categoryMapping)
+
+const displayedProjects = computed(() => {
+  // Convert display category name back to slug
+  const categorySlug = Object.entries(categoryMapping).find(
+    ([_, display]) => display === selectedCategory.value
+  )?.[0] as CategoryKeys | undefined
+
+  if (!categorySlug || !projectsData[categorySlug]) {
+    return []
+  }
+
+  return Object.entries(projectsData[categorySlug]).map(([slug, project]) => ({
+    title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    image: project.images[0],
+    location: project.location,
+    year: project.time,
+    slug: slug,
+    categorySlug: categorySlug
+  }))
+})
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value
 }
 
-const selectCategory = (category: string) => {
+const selectCategory = (category: DisplayCategories) => {
   selectedCategory.value = category
   isDropdownOpen.value = false
+}
+
+const navigateToProject = (categorySlug: string, projectSlug: string) => {
+  router.push(`/projects/${categorySlug}/${projectSlug}`)
 }
 </script>
 
@@ -94,7 +91,7 @@ const selectCategory = (category: string) => {
                 <li
                   v-for="category in categories"
                   :key="category"
-                  @click="selectCategory(category)"
+                  @click="selectCategory(category as DisplayCategories)"
                   class="px-4 py-2 hover:bg-gray-800 cursor-pointer transition-colors duration-200 text-lg"
                   :class="{ 'bg-gray-800': category === selectedCategory }"
                 >
@@ -110,13 +107,22 @@ const selectCategory = (category: string) => {
 
       <div class="w-[90%] justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div v-for="project in projects" :key="project.title" class="flex flex-col">
-            <img :src="project.image" :alt="project.title" class="w-full h-64 object-cover mb-4" />
+          <div 
+            v-for="project in displayedProjects" 
+            :key="project.title" 
+            class="flex flex-col cursor-pointer" 
+            @click="navigateToProject(project.categorySlug, project.slug)"
+          >
+            <img 
+              :src="project.image" 
+              :alt="project.title" 
+              class="w-full h-64 object-cover mb-4" 
+            />
             <div class="flex flex-row justify-between gap-x-fit">
               <h2 class="text-2xl text-white mb-2">{{ project.title }}</h2>
               <p class="text-white text-2xl">{{ project.year }}</p>
             </div>
-            <p class="mb-4" v-html="project.location"></p>
+            <p class="mb-4">{{ project.location }}</p>
           </div>
         </div>
       </div>

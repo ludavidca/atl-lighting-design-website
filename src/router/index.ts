@@ -1,5 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import data from '../../public/atl.json'
 
+const generateProjectRoutes = () => {
+  const routes: Array<any> = []
+
+  Object.entries(data.projects).forEach(([category, categoryProjects]) => {
+    // Add category route
+    routes.push({
+      path: `/projects/${category}`,
+      name: `${category}-category`,
+      component: () => import('../views/ProjectsView.vue'),
+      props: { category }
+    })
+
+    // Add individual project routes
+    Object.entries(categoryProjects).forEach(([projectSlug, project]) => {
+      routes.push({
+        path: `/projects/${category}/${projectSlug}`,
+        name: projectSlug,
+        component: () => import('../views/ProjectPageView.vue'),
+        props: {
+          category,
+          projectSlug,
+          project
+        }
+      })
+    })
+  })
+
+  return routes
+}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,45 +40,27 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/news',
-      name: 'News',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/NewsView.vue')
-    },
-    {
       path: '/projects',
       name: 'Projects',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/projectpage',
-      name: 'Project Page',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ProjectPageView.vue')
+      path: '/news',
+      name: 'News',
+      component: () => import('../views/NewsView.vue')
     },
     {
       path: '/awards',
-      name: 'Awardss',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      name: 'Awards',
       component: () => import('../views/AwardsView.vue')
     },
     {
       path: '/contact',
       name: 'Contact',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/ContactView.vue')
-    }
+    },
+    // Add dynamic project routes
+    ...generateProjectRoutes()
   ]
 })
 

@@ -58,12 +58,39 @@
       "date": "\"2023-02-10 00:00:00\"",
       "images": [
         "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-1.jpg",
-        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-2.jpg"
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-1.jpg"
       ]
     }
   },
   "projects": {
     "arts-and-culture": {
+      "confucian-palace": {
+        "description": "Located in the birthplace of Confucius, Nishan, about 25 kilometers southeast of Qufu, China, the Confucian Palace was built to honor Confucius and his disciples, and to demonstrate Confucianism and related Chinese cultures.\n\nThe lighting design covers a 65,000 sqm interior space, composed of traditional halls, auditoriums and amenities. Five functional halls are named after the Five Virtues of Confucianism: the halls of Benevolence, Righteousness, Courtesy, Wisdom and Loyalty. The ancient Chinese-style architectural structures, such as columns, Tou-kung and beams are extensively adopted in the Palace.\n\nThe challenge of lighting design is not only to provide various lighting scenes to fulfill multiple functions of each space, but also to highlight Confucius’ profound influence on Chinese people and culture through the interior design of the Palace. The lighting seamlessly integrates with traditional Chinese-style architecture, while adds another unique impressive layer.   \n\nThousands of customized Chinese traditional LED candlesticks controlled by a DMX521 system flicker throughout the Palace and symbolize “The Light of Confucianism Shines Forever”. Dozens of LED candle pendants are used in the Hall of Benevolence to create the ambience of a traditional Chinese library. Together with a large media screen, each LED candle in the pendants and every LED lighted bookshelf can be synchronized to present a five-minute light show called “The Power of Benevolence”.  \n\nFour distinctive small halls of Righteousness, Courtesy, Wisdom and Loyalty represent four legendary beasts in Chinese culture. Lighting matches interior decoration to create four different color atmospheres for the four halls respectively.  \n\nTo comply with energy code, luminaires are equipped with >100lm/w LED modules, and most of them are managed by lighting control systems with energy-saving mode. Meanwhile, customized and concealed luminaries are requested to use replaceable LED modules for both initial and maintenance cost considerations",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-7.jpg"
+        ],
+        "location": "Nishan, China",
+        "time": 2019
+      },
+      "five-seal-mandala": {
+        "description": "Located in the Lingshan scenic area, Five Seal Mandala is a Tibetan Buddhist style building serving as an exhibition for Tibetan Buddhist culture.             \n\nAfter in-depth discussions with interior designers, ATL developed a lighting scheme with 10,000 butter lanterns on all sides to create the atmosphere of a Tibetan Buddhist temple. Butter lanterns are customized from LED light sources, with brightness and twinkle controlled by a DMX512 lighting control system. The effect of flashing lights is similar to traditional butter lamps with glass covers found in many Tibetan Buddhist temples.\n\nSince their grand opening, Five Seal Mandala has hosted many Tibetan Buddhists from all over China. This project won the first prize of lighting design by CIEC in 2013",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/five-seal-mandala-6.png"
+        ],
+        "location": "Wuxi, China",
+        "time": 2013
+      },
       "guanyin-altar": {
         "description": "Suzhou Wang Xiaohui Art Museum is a four-door old Jiangnan house. It is the Suzhou government that provides “Ding Zhai” to Wang Xiaohui free of charge as an art gallery open to the public. This is an art gallery that promotes contemporary works by Wang Xiaohui and famous artists from home and abroad.\n\nThe façade of the building is decorated with stainless steel curtains. During the day, the lines of the building are tough and rigorous. At night, the red facade of the old house in Jiangnan is restored against the light. The Dingzhai building has a deep sense of depth, and the interior and the courtyard form a layered effect. As the main empty space, the exhibition hall takes into account the combination of classical architecture and Wang’s contemporary art, and strives to realize the use of ancient houses. The exhibition hall space uses 0.9m**0.9m light boxes to distribute the entire ceiling. The RGBW lights in the light box are controlled by DMX512. The system realizes dynamic changes, which can not only meet the basic needs of the exhibition halls with bright and uniform space, but also present the works of Wang Xiaohui in a freehand manner on the ceiling; the courtyard has a strong “Suzhou classical garden” feature, in the lighting Adhering to the “quiet, quiet” principle of the garden.\n\nThe project opened in September 2013 and received much attention from the media, the art world and the lighting industry. In 2015, it won the second prize in the Lighting Interior Design Award.",
         "images": [
@@ -78,7 +105,80 @@
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/guanyin-altar-9.jpg"
         ],
         "location": "ZhouShan City, China",
-        "time": 2024
+        "time": 2019
+      },
+      "huallywood-studio": {
+        "description": "Huallywood Studio is a revitalization project based in an abandoned steel plant covering an area of 340,000 square meters. The purpose of this studio is to be an entertainment and cultural commercial complex. The studio includes a main workshop area, as well as a large artificial lake. The Wuxi municipal government planned to maintain the original architectural framework and transform it into a commercial complex for indoor film studios and digital post-production. A film-themed park was developed through renovating the building’s facades, interior design, as well as restructuring the landscape.\n\nThe project was planned and designed by GENSLER Company. ATL consulted on the lighting design for covering the building facades, landscape and indoor facilities. ATL integrated LED lighting and an outdoor display facing the main street to highlight a color banner nearly 2 meters high and 1,000 meters long. For the indoor lighting, ATL provided the design for a large workshop, the public shopping mall, and various artworks.\n\nFollowing the completion of this project, Huallywood has become a prominent center for entertainment in Wuxi city.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huallywood-studio-6.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2010
+      },
+      "huancui-tower": {
+        "description": "Huancui Tower is located at the top of Huancui Hill Park in Weihai city. It is a new pavilion-style building complex that imitates the Ming Dynasty (AD 1368 – 1644) architectural style. It is a landmark building in Weihai, hosting cultural and artistic exhibitions and functions.  Huancui Tower also displays Chinese calligraphy, paintings and woodcarvings.\n\nThe lighting design scope included the main tower, two wing buildings, the entrance steps, surrounding walls and landscape. Working closely with the architect and owner, ATL designers created a lighting plan of hiding LED lighting fixtures in architectural structures and components. The projection lamps illuminating the roof were customized LED fixtures in the shape of the glazed tiles. The fixtures illuminate the tile surface, while the colour-changeable lights at the top are diffusely reflected. The floodlight of the main tower is a 2700K warm color light.\n\nIn consultation with interior designers, ATL created a warm and comfortable space with warm white light of 3000K. 2700K decorative LED lighting strips were used throughout for contrast.  \n\nIn Weihai, Huancui Tower is a beautiful lookout location. With this lighting effect, Huancui Tower has also become a popular nightscape to visit. ",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huancui-tower-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huancui-tower-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/huancui-tower-3.jpg"
+        ],
+        "location": "Weihai, China",
+        "time": 2013
+      },
+      "lingshan-buddhist-palace": {
+        "description": "Lingshan Buddhist Palace is a famous cultural building in Wuxi, China, accommodating tourism, conferences, exhibitions and cultural experiences. The building is 150 meters by 180 meters, with a total construction area of 50,000 square meters.\n\nATL professional consultants had the privilege of working closely with Hyee Interior Design Company and the owners, Lingshan Group. They adopted the most advanced LED and lighting control technology, DALI & DMX, to optimize the combination of art and technology, carving a masterpiece combining Chinese Buddhist grotto art and traditional Buddhist architectural elements. In the core area of the palace, the super dome of the Altar Hall was illuminated by hundreds of thousands of RGBW LEDs, which created a striking atmosphere.\n\nThis outstanding lighting design work won the highest honor in China’s lighting industry, the first prize of CIEC Indoor Lighting Design in 2008.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-1.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-8.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-9.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-buddhist-palace-10.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2017
+      },
+      "silk-road-street": {
+        "description": "The “Silk Road” Street is a large-scale commercial and tourism district in Xi’an city, China. It locates at the historic site – West Market of Chang’an City in Tang dynasty (AD 618 – 907), southwestern part of Xi’an Ancient City Wall. The total planned area of the project is about 33 hectares.\n\nATL consultants created “comfortable, charming and memorable” as the lighting design theme for “Silk Road” street, a first-class commercial tourism block with exotic cultural characteristics. The India Square is an entrance area for visitors, standing a memorial pavilion with prominent Indian architectural style. The elephant relief on the stairs and the Kumarajiva statue on the square are the most important landscapes. The main purpose of the lighting is to cast the elephant relief and the image of Kumarajiva statue with surface illumination level, while the floodlights highlight the pillars and top cover of the memorial pavilion. Meanwhile, the floodlights in the lower part of the top cover provide a basic safety illumination. The building facades and railings on the square are illuminated by accent lighting, creating a special atmosphere, and a holistic view for visitors in the distance.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/silk-road-street-6.jpg"
+        ],
+        "location": "Xi'an, China",
+        "time": 2014
+      },
+      "thousand-buddha-hall-–-usnisa-palace": {
+        "description": "The five-story Thousand Buddha Hall on the ground floor of the Unisian Palace is the core visiting space. In the center of the Thousand Buddha Hall, there is a sacred pagoda of the Buddha’s skeleton. It is named as the Great Sacrifice Pagoda, which is the largest indoor Chinese-Tibetan world Pagoda in China. It is surrounded by a thousand statues of Bodhisattva and flying apsaras, creating a magnificent “Buddha’s Heavenly Boundary”.\n\nThe Lighting design is to address the basic visiting function, and more important, to highlight the core of Unisian Palace, the Great Sacrificed Pagonda, and the thousand Buddha statues. Due to the unique space of the hall, the shape of statues, and the three-story platform of the pagoda, an ultra-narrow beam LED lighting projection system in a long distance is adopted. With the intelligent control function, it creates different levels of space atmosphere by outlining the decorative facade through a variety of lighting scenes setup.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/thousand-buddha-hall-%E2%80%93-usnisa-palace-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/thousand-buddha-hall-%E2%80%93-usnisa-palace-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/thousand-buddha-hall-%E2%80%93-usnisa-palace-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/thousand-buddha-hall-%E2%80%93-usnisa-palace-4.jpg"
+        ],
+        "location": "Nanjing, China",
+        "time": 2016
+      },
+      "usnisa-palace": {
+        "description": "Nanjing Niushou Mountain is famous for its origin of Niutou Sect of Chinese Zen Buddhism Culture, which has flourished for more than 1,700 years. Built in 2017, Usnisa Palace locates in the west peak of Niushou Mountain. It is 220 meters long, 160 meters wide and 90 meters high. The single construction area covers about 136,000 square meters.\n\nThe inside space of Usnisa Palace consists of 9 floors, with 6 floors underground and 3 floors above ground. The interior designer adopted many traditional Chinese construction techniques. The grotto culture elements in different stages of Buddhist development are selected as the creative materials, forming a Buddhist cultural and artistic space of the unity of heaven and human. The whole Usnisa Palace composes of three core spaces: Zen State Scenery, Great Usnisa Hall and Usnisa Worship Palace. In addition, it includes functions of convention, exhibition, catering and other commerce spaces.\n\nTo create different atmospheres of Zen cultures in three core spaces, ATL lighting consultants worked closely with interior designer, adopting and combining different leading-edge lighting technologies, e.g. daylighting, DALI and DMX controls and LED illumination in super large scale. The detailed lighting design solutions are illustrated in each space.  ",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/usnisa-palace-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/usnisa-palace-3.jpg"
+        ],
+        "location": "Nanjing, China",
+        "time": 2016
       },
       "wang-xiaohui-art-museum": {
         "description": "Suzhou Wang Xiaohui Art Museum is a four-door old Jiangnan house. It is the Suzhou government that provides “Ding Zhai” to Wang Xiaohui free of charge as an art gallery open to the public. This is an art gallery that promotes contemporary works by Wang Xiaohui and famous artists from home and abroad.\n\nThe façade of the building is decorated with stainless steel curtains. During the day, the lines of the building are tough and rigorous. At night, the red facade of the old house in Jiangnan is restored against the light. The Dingzhai building has a deep sense of depth, and the interior and the courtyard form a layered effect. As the main empty space, the exhibition hall takes into account the combination of classical architecture and Wang’s contemporary art, and strives to realize the use of ancient houses. The exhibition hall space uses 0.9m**0.9m light boxes to distribute the entire ceiling. The RGBW lights in the light box are controlled by DMX512. The system realizes dynamic changes, which can not only meet the basic needs of the exhibition halls with bright and uniform space, but also present the works of Wang Xiaohui in a freehand manner on the ceiling; the courtyard has a strong “Suzhou classical garden” feature, in the lighting Adhering to the “quiet, quiet” principle of the garden.\n\nThe project opened in September 2013 and received much attention from the media, the art world and the lighting industry. In 2015, it won the second prize in the Lighting Interior Design Award.",
@@ -90,7 +190,17 @@
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/wang-xiaohui-art-museum-5.png"
         ],
         "location": "Suzhou, China",
-        "time": 2024
+        "time": 2013
+      },
+      "zen-state-scenery-–-usnisa-palace": {
+        "description": "To create a large-scale comprehensive tourist space, Zen State Scenery takes the concept of “human landscape” to integrate natural landscape, Buddhist holy land and humanistic landscape.\n\nIn the center of the hall, a white marble statue of Sakyamuni is lying on a lotus base. ATL consultants considered two main aspects for the lighting design of Zen landscape, one was to meet the functional lighting for the tourist space, the other was to provide a phenomenal effect for Buddhist rituals and performances. ATL consultants developed a solution, a combination of artificial and natural lighting, a changeable divine sky on the top of the hall. It is a daylighting dome, to provide natural sunshine in sunny days, and meanwhile, energy-saving and long lifetime LED high-power spotlights are used to provide comfortable and safe basic lighting for the space under gloomy days and evening. During performance time, dome luminous film can simulate the morning and dusk in a short time to restore the sky at different times. The LED can change color and color temperature, showing a fresh and bright morning, or to simulate the blue sky and white clouds at noon. In Buddhist ritual moments, it can simulate the scene of Buddha Star Nirvana as well.\n\nDALI control technology is used in the solution, which guarantees the stability of lighting fixtures in large space. It enhances lifetime, implements the monitoring of the operation status and reduces the maintenance cost. The lighting management system combines centralized master control with scene and timing control. It is integrated with stage and sound management system to create a real “Human Landscape”.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/zen-state-scenery-%E2%80%93-usnisa-palace-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/zen-state-scenery-%E2%80%93-usnisa-palace-2.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/zen-state-scenery-%E2%80%93-usnisa-palace-3.jpg"
+        ],
+        "location": "Nanjing, China",
+        "time": 2016
       }
     }
   }

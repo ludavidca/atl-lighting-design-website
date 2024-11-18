@@ -61,16 +61,16 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
 <template>
   <div class="bg-black text-white font-sans">
     <div class="py-8">
-      <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4 relative">
+      <div class="flex flex-row items-center justify-center pt-[10%] sm:pt-[5%] gap-x-4 relative">
         <div class="relative group">
           <button
             @click="toggleDropdown"
-            class="flex items-center text-5xl hover:text-gray-300 transition-all duration-500 hover:transform hover:scale-[1.02]"
+            class="flex items-center text-3xl pb-8 sm:text-5xl hover:text-gray-300 transition-all duration-500 hover:transform hover:scale-[1.02]"
           >
             {{ selectedCategory }}
             <img
               src="/ui/dropdown.svg"
-              class="object-contain ml-4 transition-transform duration-200"
+              class="p-[5px] sm:p-0 mb-1 sm:mb-0 object-contain ml-2 sm:ml-4 transition-transform duration-200"
               :class="{ 'transform rotate-180': isDropdownOpen }"
               :style="{ height: '20px', marginTop: '10px' }"
             />
@@ -103,7 +103,7 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
         </div>
       </div>
 
-      <hr class="border-t-2 border-black mt-6 mx-[5%] mb-10" />
+      <hr class="hidden sm:flex border-t-2 border-black mt-6 mx-[5%] mb-10" />
 
       <div class="w-[90%] justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 ">

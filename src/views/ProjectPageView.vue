@@ -51,19 +51,19 @@ const currentProject = computed(() => {
 
 <template>
   <main class="bg-black">
-    <div class="flex flex-row items-center justify-between pt-[7%] w-full px-[6%] relative">
+    <div class="flex flex-row items-center justify-between pt-[20%] sm:pt-[7%] w-full px-[6%] relative">
       <div>
         <RouterLink class="flex flex-row items-center gap-x-3" to="/projects">
           <img src="/ui/smallArrow.svg" class="w-4" />
-          <p class="text-white font-normal text-lg">Back to {{currentProject?.category}}</p>
+          <p class="hidden sm:flex text-white font-normal text-lg">Back to {{currentProject?.category}}</p>
         </RouterLink>
       </div>
 
-      <div class="absolute left-1/2 transform -translate-x-1/2">
-        <p class="text-white text-4xl pb-3">{{currentProject?.title}}</p>
+      <div class="mx-auto sm:mx-0 sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
+        <p class="text-white text-2xl sm:text-4xl pb-3 text-center">{{currentProject?.title}}</p>
       </div>
 
-      <div class="flex flex-row items-center gap-x-3">
+      <div class="hidden sm:flex flex-row items-center gap-x-3">
         <p class="text-white font-normal text-lg">Next Project</p>
         <div class="rotate-180">
           <img src="/ui/smallArrow.svg" class="w-4" />
@@ -91,7 +91,7 @@ const currentProject = computed(() => {
       </ImageCarousel>
     </div>
     <div class="flex flex-col justify-center items-center py-[3%] w-[85%] mx-auto">
-      <p class="text-white text-xl whitespace-pre-line leading-relaxed indent-12" v-text='currentProject?.description'/>
+      <p class="text-white sm:text-xl whitespace-pre-line leading-relaxed indent-12" v-text='currentProject?.description'/>
     </div>
   </main>
 </template>

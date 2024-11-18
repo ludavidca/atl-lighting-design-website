@@ -34,23 +34,22 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
   router.push(`/projects/${categorySlug}/${projectSlug}`)
 }
 
-console.log(awards)
 </script>
 
 <template>
   <div class="bg-black text-white font-sans min-h-screen">
     <div class="py-8">
-      <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4">
-        <h1 class="text-5xl text-center">Awards</h1>
+      <div class="flex flex-row items-center justify-center pt-[10%] sm:pt-[5%] gap-x-4">
+        <h1 class="text-3xl sm:text-5xl text-center">Awards</h1>
       </div>
 
-      <hr class="border-t-2 border-black mt-6 mx-[5%]" />
+      <hr class="border-t-2 border-black sm:mt-6 mx-[5%]" />
 
-      <div class="w-[90%] justify-center mx-auto grid grid-cols-2">
+      <div class="w-[100%] justify-center mx-auto grid sm:grid-cols-2">
         <div
           v-for="award in awards"
           :key="award.title"
-          class="flex flex-col items-center h-[40vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:scale-[1.02]"
+          class="flex flex-col items-center h-[40vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:bg-gray-950 hover:scale-[1.02]"
           @click="navigateToProject(award.category, award.linktitle)"
         >
           <div class="w-full overflow-hidden">

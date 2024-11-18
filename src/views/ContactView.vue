@@ -33,17 +33,17 @@ const contacts = ref([
 <template>
   <div class="bg-black text-white font-sans min-h-screen">
     <div class="mx-auto py-8">
-      <div class="flex flex-row items-center justify-center pt-[5%] gap-x-4">
-        <h1 class="text-5xl text-center">Our Offices</h1>
+      <div class="flex flex-row items-center justify-center pt-[10%] sm:pt-[5%] gap-x-4">
+        <h1 class="text-3xl sm:text-5xl text-center">Our Offices</h1>
       </div>
 
-      <hr class="border-t-2 border-black mt-6 mx-[5%] mb-10" />
+      <hr class="border-t-2 border-black sm:mt-6 mx-[5%] mb-10" />
 
       <div class="w-[90%] justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div v-for="contact in contacts" :key="contact.title" class="flex flex-col">
             <img :src="contact.image" :alt="contact.title" class="w-full h-64 object-cover mb-4" />
-            <h2 class="text-2xl font-bold mb-2">{{ contact.title }}</h2>
+            <h2 class="text-lg sm:text-2xl font-bold mb-2">{{ contact.title }}</h2>
             <p class="mb-4" v-html="contact.address"></p>
             <p>
               <a :href="contact.email" class="underline mr-4 text-white">Email</a>
@@ -52,13 +52,13 @@ const contacts = ref([
           </div>
         </div>
 
-        <div class="flex flex-col md:flex-row mt-16 items-center mb-10">
+        <div class="flex flex-col md:flex-row mt-16 items-start sm:items-center mb-10">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/Contact%2Fcareers.svg?alt=media"
             alt="Careers"
             class="w-full h-[250px] md:w-2/3 object-cover mb-8 md:mb-0"
           />
-          <div class="flex w-1/3 items-center justify-center mx-auto">
+          <div class="flex w-1/3 items-center justify-start sm:justify-center sm:mx-auto">
             <div>
               <h2 class="text-4xl mb-4">Careers</h2>
               <p>

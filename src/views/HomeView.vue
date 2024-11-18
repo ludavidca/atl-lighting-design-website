@@ -41,7 +41,7 @@ const values = ref([
 <template>
   <main class="bg-black overflow-x-hidden">
     <div
-      className="absolute bottom-[30%] hidden sm:flex sm:right-[10%] z-10 text-white text-lg sm:text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-[25%] shadow-3xl"
+      className="absolute bottom-[30%] hidden sm:flex sm:right-[10%] z-10 text-white text-lg sm:text-4xl font-semibold backdrop-blur-[3px] p-1 rounded-[25%] shadow-3xl transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80 "
     >
       Lighting Connects Us with the World ©​
     </div>
@@ -62,9 +62,9 @@ const values = ref([
     </div>
 
     <div class="px-[5%] pt-20 overflow-y-hidden w-[100%]">
-      <!-- This is the Our Company Intro -->
-      <div class="flex flex-row w-fit items-center justify-center relative translate-x-[-9%]">
-        <div class="z-10 w-full translate-x-[10%] p-[4%] bg-black">
+      <!-- Our Company Intro -->
+      <div class="flex flex-col sm:flex-row w-full items-center justify-between relative">
+        <div class="z-10 pl-10 sm:pl-0 sm:w-[45%] bg-black pr-10 py-20 ">
           <h1 class="text-5xl text-white pb-4">Our Company</h1>
           <hr class="border-t-2 border-white mt-2 pb-2" />
           <p class="text-md text-white">
@@ -75,10 +75,11 @@ const values = ref([
             establishing our reputation as pioneers in cultural and tourism lighting design.
           </p>
         </div>
-        <div>
+        <div class="w-full sm:w-[60%] ml-[-5%]">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F3.jpg?alt=media&token=fb2e62ad-4299-4fc8-91d4-3b91ecfb2bd0"
-            class="w-full object-cover object-center overflow-y-hidden"
+            alt="Company Image"
+            class="w-full h-full object-cover"
           />
         </div>
       </div>
@@ -89,10 +90,9 @@ const values = ref([
           <h1 class="text-5xl text-white">Our Values</h1>
           <div class="grid grid-cols-3 gap-12 w-full pt-10">
             <div v-for="value in values" :key="value.title">
-              <div class="border-white border-2 p-6 flex-col">
+              <div class="border-2 p-6 flex-col rounded-2xl">
                 <h1 class="text-3xl text-white">{{ value.title }}</h1>
-                <div class="w-full h-[2px] bg-white my-3" />
-                <p class="text-white text-lg pb-6">{{ value.text }}</p>
+                <p class="text-white text-lg pb-6 mt-4">{{ value.text }}</p>
               </div>
               <img :src="value.imagelink" class="w-full pt-20" />
             </div>

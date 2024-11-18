@@ -51,7 +51,7 @@ const currentProject = computed(() => {
 
 <template>
   <main class="bg-black">
-    <div class="flex flex-row items-center justify-between pt-[7%] w-full px-[10%] relative">
+    <div class="flex flex-row items-center justify-between pt-[7%] w-full px-[6%] relative">
       <div>
         <RouterLink class="flex flex-row items-center gap-x-3" to="/projects">
           <img src="/ui/smallArrow.svg" class="w-4" />
@@ -71,10 +71,7 @@ const currentProject = computed(() => {
       </div>
     </div>
 
-    <div>
-      <hr class="border-t-2 border-white mt-6 mx-[10%] pb-10" />
-    </div>
-    <div class="w-[65%] h-[500px] mx-auto overflow-hidden">
+    <div class="w-[90%] h-[650px] mx-auto overflow-hidden mt-8 rounded-md group">
       <ImageCarousel
         :navigation="true"
         :pagination="true"
@@ -93,7 +90,7 @@ const currentProject = computed(() => {
         </Slide>
       </ImageCarousel>
     </div>
-    <div class="flex flex-col justify-center items-center py-[5%] w-[65%] mx-auto">
+    <div class="flex flex-col justify-center items-center py-[3%] w-[85%] mx-auto">
       <p class="text-white text-xl whitespace-pre-line leading-relaxed indent-12" v-text='currentProject?.description'/>
     </div>
   </main>

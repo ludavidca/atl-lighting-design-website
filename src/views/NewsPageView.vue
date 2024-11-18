@@ -16,33 +16,23 @@ const getCurrentPath = () => {
   return path;
 };
 
+
 getCurrentPath();
 
-const projectsData = data.projects as Projects
+const newsData = data.news as News
 
 // Get current project data from route parameters
-const currentProject = computed(() => {
+const currentNews = computed(() => {
   const path = window.location.pathname.split("/")
+  console.log(path)
   
-  const category = path[2] as CategoryKeys
-  const projectSlug = path[3] as string
-
-  console.log(category, projectSlug)
+  const newsSlug = path[2] as string
   
-  if (!category || !projectSlug || !projectsData[category]?.[projectSlug]) {
-    return null
-  }
 
-  // Type guard to ensure category is valid
-  if (!(category in projectsData)) {
-    return null
-  }
-
-  const project = projectsData[category][projectSlug]
+  const news = newsData[newsSlug]
   return {
-    title: projectSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
-    category: category.split("-").map((word)=>word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
-    ...project
+    title: newsSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    ...news
   }
 })
 
@@ -51,16 +41,16 @@ const currentProject = computed(() => {
 
 <template>
   <main class="bg-black">
-    <div class="flex flex-row items-center justify-between pt-[7%] w-full px-[10%] relative">
+    <div class="flex flex-row items-center justify-between pt-[7%] w-full px-[6%] relative">
       <div>
-        <RouterLink class="flex flex-row items-center gap-x-3" to="/projects">
+        <RouterLink class="flex flex-row items-center gap-x-3" to="/news">
           <img src="/ui/smallArrow.svg" class="w-4" />
-          <p class="text-white font-normal text-lg">Back to {{currentProject?.category}}</p>
+          <p class="text-white font-normal text-lg">Back to News</p>
         </RouterLink>
       </div>
 
       <div class="absolute left-1/2 transform -translate-x-1/2">
-        <p class="text-white text-4xl pb-3">{{currentProject?.title}}</p>
+        <p class="text-white text-4xl pb-3">{{currentNews?.title}}</p>
       </div>
 
       <div class="flex flex-row items-center gap-x-3">
@@ -71,10 +61,7 @@ const currentProject = computed(() => {
       </div>
     </div>
 
-    <div>
-      <hr class="border-t-2 border-white mt-6 mx-[10%] pb-10" />
-    </div>
-    <div class="w-[65%] h-[500px] mx-auto overflow-hidden">
+    <div class="w-[90%] h-[650px] mx-auto overflow-hidden mt-8 rounded-md group">
       <ImageCarousel
         :navigation="true"
         :pagination="true"
@@ -82,7 +69,7 @@ const currentProject = computed(() => {
         :timeout="5000"
         v-slot="{ currentSlide }"
       >
-        <Slide v-for="(slide, index) in currentProject?.images" :key="index">
+        <Slide v-for="(slide, index) in currentNews?.images" :key="index">
           <div v-show="currentSlide === index + 1" class="w-full h-full">
             <img
               :src="slide"
@@ -93,8 +80,8 @@ const currentProject = computed(() => {
         </Slide>
       </ImageCarousel>
     </div>
-    <div class="flex flex-col justify-center items-center py-[5%] w-[65%] mx-auto">
-      <p class="text-white text-xl whitespace-pre-line leading-relaxed indent-12" v-text='currentProject?.description'/>
+    <div class="flex flex-col justify-center items-center py-[3%] w-[85%] mx-auto">
+      <p class="text-white text-xl whitespace-pre-line leading-relaxed indent-12" v-text='currentNews?.article'/>
     </div>
   </main>
 </template>

@@ -26,4 +26,14 @@ export interface Awards {
   [title: string]: Award;
 }
 
+export interface New {
+  date: string
+  images: string[]
+  article: string
+}
+
+export interface News {
+  [title: string]: New
+}
+
 export type CategoryKeys = keyof Projects

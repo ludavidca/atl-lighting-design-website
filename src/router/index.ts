@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import data from '../../public/atl.json'
+import { compile } from 'vue'
 
 const generateProjectRoutes = () => {
   const routes: Array<any> = []
@@ -26,6 +27,16 @@ const generateProjectRoutes = () => {
         }
       })
     })
+  })
+
+  Object.entries(data.news).forEach(([title])=> {
+    routes.push({
+      path: `/news/${title}`,
+      name: title,
+      component: () => import('../views/NewsPageView.vue'),
+      props: { title }
+    }
+  )
   })
 
   return routes

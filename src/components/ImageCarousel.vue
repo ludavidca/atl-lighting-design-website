@@ -1,11 +1,11 @@
 <template>
-  <div class="relative w-full h-full">
+  <div class="relative w-full h-full group">
     <slot :currentSlide="currentSlide" />
   </div>
   <!-- Navigation -->
   <div
     v-if="navEnabled"
-    class="absolute inset-0 flex items-center justify-between px-[10%] pointer-events-none"
+    class="absolute inset-0 flex items-center justify-between px-[7%] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"
   >
     <button
       @click="prevSlide"
@@ -51,7 +51,7 @@
     </button>
   </div>
   <!-- Pagination -->
-  <div v-if="paginationEnabled" class="absolute bottom-[20%] left-0 right-0 pointer-events-none">
+  <div v-if="paginationEnabled" class="absolute bottom-[20%] left-0 right-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
     <div class="flex items-center justify-center gap-2">
       <button
         v-for="(slide, index) in slideCount"

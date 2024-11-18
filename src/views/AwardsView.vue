@@ -1,29 +1,33 @@
 <script setup lang="ts">
-import type { Awards } from '@/types';
+import type { Awards } from '@/types'
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router';
-import data from "../../public/atl.json"
-const router = useRouter();
+import { useRouter } from 'vue-router'
+import data from '../../public/atl.json'
+const router = useRouter()
 
 const awardsData = data.awards as Awards
 
 const awards = computed(() => {
-  return Object.entries(awardsData).map(([slug, award]) => ({
-    title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
-    image: award.image,
-    category: award.category,
-    linktitle: slug,
-    award: award.awards.sort((a, b) => {
-      const aYear = Number(a.split(" ").pop());
-      const bYear = Number(b.split(" ").pop());
-      return bYear - aYear;
-    }),
-    
-  })).sort((a, b) => {
-    const aYear = Number(a.award[0].split(" ").pop())
-    const bYear = Number(b.award[0].split(" ").pop())
-    return bYear - aYear;
-  })
+  return Object.entries(awardsData)
+    .map(([slug, award]) => ({
+      title: slug
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' '),
+      image: award.image,
+      category: award.category,
+      linktitle: slug,
+      award: award.awards.sort((a, b) => {
+        const aYear = Number(a.split(' ').pop())
+        const bYear = Number(b.split(' ').pop())
+        return bYear - aYear
+      })
+    }))
+    .sort((a, b) => {
+      const aYear = Number(a.award[0].split(' ').pop())
+      const bYear = Number(b.award[0].split(' ').pop())
+      return bYear - aYear
+    })
 })
 
 const navigateToProject = (categorySlug: string, projectSlug: string) => {
@@ -31,7 +35,6 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
 }
 
 console.log(awards)
-
 </script>
 
 <template>
@@ -41,19 +44,23 @@ console.log(awards)
         <h1 class="text-5xl text-center">Awards</h1>
       </div>
 
-      <hr class="border-t-2 border-white mt-6 mx-[5%]" />
-      <div class="w-[90%] justify-center mx-auto">
+      <hr class="border-t-2 border-black mt-6 mx-[5%]" />
+
+      <div class="w-[90%] justify-center mx-auto grid grid-cols-2">
         <div
           v-for="award in awards"
           :key="award.title"
-          class="flex flex-row w-full h-[30vh] mb-4 mt-10"
+          class="flex flex-col items-center h-[40vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:scale-[1.02]"
           @click="navigateToProject(award.category, award.linktitle)"
         >
-          <div class="w-3/5 h-full overflow-hidden">
-            <img :src="award.image" class="w-full h-full object-cover object-center" />
+          <div class="w-full overflow-hidden">
+            <img
+              :src="award.image"
+              class="w-full h-full object-cover object-center rounded-md transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80"
+            />
           </div>
-          <div class="flex flex-col w-2/5 pl-4 justify-center ml-[5%]">
-            <div class="text-2xl text-white mb-2">
+          <div class="flex flex-col w-full justify-center items-center my-2">
+            <div class="text-2xl text-white mb-2 align-center">
               {{ award.title }}
             </div>
             <div class="text-white">

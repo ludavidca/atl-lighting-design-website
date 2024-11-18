@@ -1,22 +1,46 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import data from '../../public/atl.json'
+import type { News } from '@/types'
+import { computed } from 'vue'
 
-const news = ref([
-  {
-    title: 'ATL Shanghai New Office',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F9.jpg?alt=media',
-    date: 'Jun 28th, 2020',
-    text: 'ATL Shanghai moved into an iconic building located in the Urban Best Practice Area on June 28, 2020. As a green building showcase, the new office building is the Alsace Pavilion during Expo Shanghai 2010. Equipped with a water curtained solar panel on the south facade, the building effectively utilizes green energy upon the changes of outdoor temperature and sunlight intensity. Inside the building, a Human Centric Lighting system demonstrates the cutting-edge lighting technology to maximize energy saving and achieve the highest standard of Well Building V2.'
-  },
-  {
-    title: 'ATL Shanghai New Office',
-    image:
-      'https://firebasestorage.googleapis.com/v0/b/atllightingdesign.appspot.com/o/CarouselImages%2F9.jpg?alt=media',
-    date: 'Jun 28th, 2020',
-    text: 'ATL Shanghai moved into an iconic building located in the Urban Best Practice Area on June 28, 2020. As a green building showcase, the new office building is the Alsace Pavilion during Expo Shanghai 2010. Equipped with a water curtained solar panel on the south facade, the building effectively utilizes green energy upon the changes of outdoor temperature and sunlight intensity. Inside the building, a Human Centric Lighting system demonstrates the cutting-edge lighting technology to maximize energy saving and achieve the highest standard of Well Building V2.'
+const router = useRouter()
+
+const news = data.news as News
+
+function FormatDate(date: string) {
+  try {
+    const formattedDate = new Date(JSON.parse(date))
+
+    // Format the date using Intl.DateTimeFormat
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    })
+
+    return formatter.format(formattedDate)
+  } catch {
+    return 'No Date'
   }
-])
+}
+
+const displayedNews = computed(() => {
+  return Object.entries(news).map(([slug, news]) => ({
+    link: slug,
+    title: slug
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' '),
+    image: news.images[0],
+    article: news.article,
+    date: FormatDate(news.date)
+  }))
+})
+
+const navigateToNews = (newsSlug: string) => {
+  router.push(`/news/${newsSlug}`)
+}
 </script>
 
 <template>
@@ -26,21 +50,25 @@ const news = ref([
         <h1 class="text-5xl text-center">News</h1>
       </div>
 
-      <hr class="border-t-2 border-white mt-6 mx-[5%]" />
+      <hr class="border-t-2 border-black mt-6 mx-[5%]" />
 
       <div class="w-[90%] justify-center mx-auto gap-y-10">
         <div
-          v-for="article in news"
+          v-for="article in displayedNews"
           :key="article.title"
-          class="flex flex-row h-[30vh] p-2 border-white border-2 mt-10"
+          class="flex flex-row h-[30vh] p-4 mt-10 rounded-lg transition-all duration-500 hover:transform hover:scale-[1.02]"
+          @click="navigateToNews(article.link)"
         >
           <div class="w-2/5 h-full overflow-hidden">
-            <img :src="article.image" class="w-full h-full object-cover object-center" />
+            <img
+              :src="article.image"
+              class="w-full h-full object-cover object-center rounded-lg transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80"
+            />
           </div>
           <div class="w-3/5 flex flex-col items-start mx-[5%] my-auto">
             <div class="text-white text-3xl mb-2">{{ article.title }}</div>
             <div class="text-white mb-6">{{ article.date }}</div>
-            <div class="text-white line-clamp-2">{{ article.text }}</div>
+            <div class="text-white line-clamp-2">{{ article.article }}</div>
           </div>
         </div>
       </div>

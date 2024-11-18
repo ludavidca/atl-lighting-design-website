@@ -37,7 +37,7 @@ const contacts = ref([
         <h1 class="text-5xl text-center">Our Offices</h1>
       </div>
 
-      <hr class="border-t-2 border-white mt-6 mx-[5%] mb-10" />
+      <hr class="border-t-2 border-black mt-6 mx-[5%] mb-10" />
 
       <div class="w-[90%] justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">

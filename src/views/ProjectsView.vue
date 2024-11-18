@@ -65,7 +65,7 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
         <div class="relative group">
           <button
             @click="toggleDropdown"
-            class="flex items-center text-5xl hover:text-gray-300 transition-colors duration-200"
+            class="flex items-center text-5xl hover:text-gray-300 transition-all duration-500 hover:transform hover:scale-[1.02]"
           >
             {{ selectedCategory }}
             <img
@@ -103,20 +103,20 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
         </div>
       </div>
 
-      <hr class="border-t-2 border-white mt-6 mx-[5%] mb-10" />
+      <hr class="border-t-2 border-black mt-6 mx-[5%] mb-10" />
 
       <div class="w-[90%] justify-center mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 ">
           <div 
             v-for="project in displayedProjects" 
             :key="project.title" 
-            class="flex flex-col cursor-pointer" 
+            class="flex flex-col cursor-pointer transition-all duration-500 hover:transform hover:scale-[1.02]" 
             @click="navigateToProject(project.categorySlug, project.slug)"
           >
             <img 
               :src="project.image" 
               :alt="project.title" 
-              class="w-full h-64 object-cover mb-4" 
+              class="w-full h-64 object-cover mb-4 transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80" 
             />
             <div class="flex flex-row justify-between gap-x-fit">
               <h2 class="text-2xl text-white mb-2">{{ project.title }}</h2>

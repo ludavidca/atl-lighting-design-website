@@ -51,10 +51,10 @@ onUnmounted(() => {
       <RouterView />
     </main>
 
-    <footer class="flex flex-col bg-black py-8 mt-auto">
+    <footer class="flex flex-col bg-black pb-8 mt-auto">
       <div class="mx-[5%]">
         <div class="flex flex-wrap items-start gap-8 relative">
-          <div class="w-full h-[2px] bg-white" />
+          <div class="w-full h-[1px] bg-white" />
           <div class="flex-1 text-white ml-5">
             <p class="font-medium text-white">Shanghai, China</p>
             <p class="font-medium text-white">Xi'an, China</p>

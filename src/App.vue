@@ -131,8 +131,9 @@ onUnmounted(() => {
           </div>
           <div class="flex flex-col items-start gap-2 sm:mr-5">
             <div>
-              <p class="font-medium text-white mb-1">Connect with us:</p>              <p>
-                <a href="mailto:atl@188.com" class=" mr-4 text-white">atl@188.com</a>
+              <p class="font-medium text-white mb-1">Connect with us:</p>              
+              <p>
+                <a href="mailto:art@atl-design.com" class=" mr-4 text-white">art@atl-design.com</a>
                 <a href="+8602152137649" class="underline">Telephone</a>
               </p>
             </div>

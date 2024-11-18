@@ -54,7 +54,7 @@ const currentNews = computed(() => {
       </div>
 
       <div class="hidden sm:flex flex-row items-center gap-x-3">
-        <p class="text-white font-normal text-lg">Next Project</p>
+        <p class="text-white font-normal text-lg">Next Article</p>
         <div class="rotate-180">
           <img src="/ui/smallArrow.svg" class="w-4" />
         </div>

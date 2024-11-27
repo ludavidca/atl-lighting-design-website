@@ -60,7 +60,7 @@ const contacts = ref([
           />
           <div class="flex w-1/3 items-center justify-start sm:justify-center sm:mx-auto">
             <div>
-              <h2 class="text-4xl mb-4">Careers</h2>
+              <h2 class="text-4xl mb-4">Join Us</h2>
               <p>
                 <a href="mailto:hr@atl-design.com" class="underline mr-4">Email</a>
                 <a href="+8602152137649" class="underline">Telephone</a>

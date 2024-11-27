@@ -1,10 +1,9 @@
 <script setup lang="ts">
 //@ts-nocheck
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import data from '../../public/atl.json'
 import type { Projects, ProjectCategory, CategoryKeys } from '@/types';  // Type-only import
-import { ref } from 'vue'
 import ImageCarousel from '../components/ImageCarousel.vue'
 import Slide from '../components/Slide.vue'
 
@@ -46,7 +45,18 @@ const currentProject = computed(() => {
   }
 })
 
+const carouselContainer = ref<HTMLElement | null>(null)
+const carouselHeight = ref(0);
+ 
+const updateCarouselHeight = () => {
+  if (carouselContainer.value) {
+    carouselHeight.value = carouselContainer.value.offsetWidth * 9 / 16; // Assuming 16:9 aspect ratio
+  }
+};
 
+const handleImageLoad = () => {
+  updateCarouselHeight();
+};
 </script>
 
 <template>
@@ -71,23 +81,34 @@ const currentProject = computed(() => {
       </div>
     </div>
 
-    <div class="w-[90%] h-[650px] mx-auto overflow-hidden mt-8 rounded-md group">
+    <div ref="carouselContainer" class="w-[90%] mx-auto mt-8 rounded-md group relative" :style="{ height: carouselHeight + 'px' }">
       <ImageCarousel
         :navigation="true"
         :pagination="true"
         :startAutoPlay="false"
         :timeout="5000"
-        v-slot="{ currentSlide }"
+        v-slot="{ currentSlide, isFullscreen }"
       >
-        <Slide v-for="(slide, index) in currentProject?.images" :key="index">
-          <div v-show="currentSlide === index + 1" class="w-full h-full">
-            <img
-              :src="slide"
-              alt="Background Images"
-              class="w-full h-full object-cover object-center"
-            />
-          </div>
-        </Slide>
+        <template v-for="(slide, index) in currentProject?.images" :key="index">
+          <Slide v-if="!isFullscreen">
+            <div v-show="currentSlide === index + 1" class="w-full h-full">
+              <img
+                :src="slide"
+                @load="handleImageLoad"
+                alt="Background Images"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </Slide>
+          <Slide v-else>
+                <img
+                  v-show="currentSlide === index + 1"
+                  :src="slide"
+                  alt="Background Images"
+                  class="w-full h-full object-contain object-center"
+                />
+          </Slide>
+        </template>
       </ImageCarousel>
     </div>
     <div class="flex flex-col justify-center items-center py-[3%] w-[85%] mx-auto">

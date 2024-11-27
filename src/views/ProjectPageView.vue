@@ -1,6 +1,6 @@
 <script setup lang="ts">
 //@ts-nocheck
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import data from '../../public/atl.json'
 import type { Projects, ProjectCategory, CategoryKeys } from '@/types'
@@ -53,7 +53,6 @@ const currentProject = computed(() => {
 
 const carouselContainer = ref<HTMLElement | null>(null)
 const carouselHeight = ref(0)
-const isFullscreen = ref(false)
 
 const updateCarouselHeight = () => {
   if (carouselContainer.value) {
@@ -64,21 +63,6 @@ const updateCarouselHeight = () => {
 const handleImageLoad = () => {
   updateCarouselHeight()
 }
-
-const toggleFullscreen = () => {
-  isFullscreen.value = !isFullscreen.value
-    if (isFullscreen.value) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-}
-
-onMounted(() => {
-  updateCarouselHeight()
-  window.addEventListener('resize', updateCarouselHeight)
-})
-
 </script>
 
 <template>
@@ -107,120 +91,136 @@ onMounted(() => {
       </div> -->
     </div>
 
-      <div
-        ref="carouselContainer"
-        class="w-[90%] mx-auto mt-8 rounded-md group relative"
-        :class="{ 'fixed top-0 left-0 w-screen h-screen z-50 bg-black': isFullscreen }"
-        :style="{ height: isFullscreen ? '100vh' : carouselHeight + 'px' }"
-      >
+    <div
+      ref="carouselContainer"
+      class="w-[90%] mx-auto mt-8 rounded-md group relative"
+      :style="{ height: carouselHeight + 'px' }"
+    >
       <ImageCarousel :navigation="true" :pagination="true" :startAutoPlay="false" :timeout="5000">
-        <template #default="{ currentSlide }">
-            <div class="relative w-full h-full">
-                <div class="w-full h-full">
+        <template #default="{ currentSlide, isFullscreen, toggleFullscreen }">
+          <div
+            :class="[
+              'relative w-full h-full overflow-hidden',
+              isFullscreen ? 'fixed top-0 left-0 w-screen h-screen z-50 bg-black' : ''
+            ]"
+          >
+            <div :class="[isFullscreen ? 'w-full h-full' : 'relative w-full h-full group']">
+              <div class="w-full h-full">
                 <template v-for="(slide, index) in currentProject?.images" :key="index">
-                    <Slide>
-                        <div v-show="currentSlide === index + 1" class="w-full h-full">
-                        <img
-                            :src="slide"
-                            @load="handleImageLoad"
-                            alt="Background Images"
-                            class="w-full h-full object-contain object-center"
-                        />
-                        </div>
-                    </Slide>
+                  <Slide v-if="!isFullscreen">
+                    <div v-show="currentSlide === index + 1" class="w-full h-full">
+                      <img
+                        :src="slide"
+                        @load="handleImageLoad"
+                        alt="Background Images"
+                        class="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                  </Slide>
+                  <Slide v-else>
+                    <img
+                      v-show="currentSlide === index + 1"
+                      :src="slide"
+                      alt="Background Images"
+                      class="w-full h-full object-contain object-center"
+                    />
+                  </Slide>
                 </template>
-                </div>
-                <div
-                v-if="!isFullscreen"
+              </div>
+
+              <div
+                v-if="true && !isFullscreen"
                 class="absolute inset-0 flex items-center justify-between px-[2%]"
-                >
+              >
                 <button
-                    @click="
+                  @click="
                     () => {
-                        const carousel = carouselContainer.value?.querySelector('.image-carousel')
-                        if (carousel) {
+                      const carousel = carouselContainer.value?.querySelector('.image-carousel')
+                      if (carousel) {
                         carousel.dispatchEvent(new Event('prev'))
-                        }
+                      }
                     }
-                    "
-                    class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity"
+                  "
+                  class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity"
                 >
-                    <svg
+                  <svg
                     width="28"
                     height="48"
                     viewBox="0 0 28 48"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    >
+                  >
                     <path
-                        d="M24 44L4 24L24 4"
-                        stroke="currentColor"
-                        stroke-width="7"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                      d="M24 44L4 24L24 4"
+                      stroke="currentColor"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
-                    </svg>
+                  </svg>
                 </button>
                 <button
-                    @click="
+                  @click="
                     () => {
-                        const carousel = carouselContainer.value?.querySelector('.image-carousel')
-                        if (carousel) {
+                      const carousel = carouselContainer.value?.querySelector('.image-carousel')
+                      if (carousel) {
                         carousel.dispatchEvent(new Event('next'))
-                        }
+                      }
                     }
-                    "
-                    class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity"
+                  "
+                  class="p-2 rounded-full text-white hover:text-slate-400 active:text-slate-400 focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity"
                 >
-                    <div class="rotate-180">
+                  <div class="rotate-180">
                     <svg
-                        width="28"
-                        height="48"
-                        viewBox="0 0 28 48"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="48"
+                      viewBox="0 0 28 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                        <path
+                      <path
                         d="M24 44L4 24L24 4"
                         stroke="currentColor"
                         stroke-width="7"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        />
+                      />
                     </svg>
-                    </div>
+                  </div>
                 </button>
+              </div>
+
+              <div v-if="true && !isFullscreen" class="absolute bottom-[5%] left-0 right-0">
+                <div
+                  class="flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    v-for="(slide, index) in currentProject?.images?.length"
+                    :key="index"
+                    @click="
+                      () => {
+                        const carousel = carouselContainer.value?.querySelector('.image-carousel')
+                        if (carousel) {
+                          carousel.dispatchEvent(new CustomEvent('goto', { detail: index }))
+                        }
+                      }
+                    "
+                    :class="[
+                      'w-3 h-3 rounded-full focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2',
+                      index + 1 === currentSlide ? 'bg-slate-400' : 'bg-white'
+                    ]"
+                  ></button>
                 </div>
-                    <div v-if="!isFullscreen" class="absolute bottom-[5%] left-0 right-0">
-                        <div
-                        class="flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                        >
-                        <button
-                            v-for="(slide, index) in currentProject?.images?.length"
-                            :key="index"
-                            @click="
-                            () => {
-                                const carousel = carouselContainer.value?.querySelector('.image-carousel')
-                                if (carousel) {
-                                carousel.dispatchEvent(new CustomEvent('goto', { detail: index }))
-                                }
-                            }
-                            "
-                            :class="[
-                            'w-3 h-3 rounded-full focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2',
-                            index + 1 === currentSlide ? 'bg-slate-400' : 'bg-white'
-                            ]"
-                        ></button>
-                        </div>
-                    </div>
-            <button
-              @click="toggleFullscreen"
-              class="absolute top-4 right-4 z-10 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-3 py-2 rounded-md"
-            >
-              <span v-if="!isFullscreen">Fullscreen</span>
-              <span v-else>Exit Fullscreen</span>
-            </button>
+              </div>
+              <button
+                @click="toggleFullscreen"
+                class="absolute top-4 right-4 z-10 bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white px-3 py-2 rounded-md"
+              >
+                <span v-if="!isFullscreen">Fullscreen</span>
+                <span v-else>Exit Fullscreen</span>
+              </button>
             </div>
+          </div>
         </template>
       </ImageCarousel>
     </div>

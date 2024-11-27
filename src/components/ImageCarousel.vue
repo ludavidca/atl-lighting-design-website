@@ -34,7 +34,7 @@
                         ]"></button>
                 </div>
             </div>
-            <slot name="fullscreen-button" :toggleFullscreen="toggleFullScreen" />
+            <slot name="fullscreen-button" />
         </div>
     </div>
 </template>

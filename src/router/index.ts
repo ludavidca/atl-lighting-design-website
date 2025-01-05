@@ -5,38 +5,66 @@ import { compile } from 'vue'
 const generateProjectRoutes = () => {
   const routes: Array<any> = []
 
-  Object.entries(data.projects).forEach(([category, categoryProjects]) => {
-    // Add category route
-    routes.push({
-      path: `/projects/${category}`,
-      name: `${category}-category`,
-      component: () => import('../views/ProjectsView.vue'),
-      props: { category }
-    })
+  // Helper function to create URL-safe slugs
+  const createUrlSlug = (text: string): string => {
+    return encodeURIComponent(text)
+      .toLowerCase()
+      .replace(/%[0-9a-f]{2}/g, '-')
+      .replace(/[^a-z0-9-]/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '')
+  }
 
-    // Add individual project routes
+  // Helper function to store original names for props while using safe URLs
+  const createRouteEntry = (path: string, originalName: string, component: any, props: any) => {
+    return {
+      path,
+      name: createUrlSlug(originalName), // Safe route name
+      component,
+      props: {
+        ...props,
+        originalName // Store the original name for display
+      }
+    }
+  }
+
+  Object.entries(data.projects).forEach(([category, categoryProjects]) => {
+    // Add category route with safe URL
+    const safeCategoryPath = createUrlSlug(category)
+    routes.push(
+      createRouteEntry(
+        `/projects/${safeCategoryPath}`,
+        `${category}-category`,
+        () => import('../views/ProjectsView.vue'),
+        { category }
+      )
+    )
+
+    // Add individual project routes with safe URLs
     Object.entries(categoryProjects).forEach(([projectSlug, project]) => {
-      routes.push({
-        path: `/projects/${category}/${projectSlug}`,
-        name: projectSlug,
-        component: () => import('../views/ProjectPageView.vue'),
-        props: {
-          category,
+      const safeProjectSlug = createUrlSlug(projectSlug)
+      routes.push(
+        createRouteEntry(
+          `/projects/${safeCategoryPath}/${safeProjectSlug}`,
           projectSlug,
-          project
-        }
-      })
+          () => import('../views/ProjectPageView.vue'),
+          {
+            category,
+            projectSlug,
+            project
+          }
+        )
+      )
     })
   })
 
-  Object.entries(data.news).forEach(([title])=> {
-    routes.push({
-      path: `/news/${title}`,
-      name: title,
-      component: () => import('../views/NewsPageView.vue'),
-      props: { title }
-    }
-  )
+  Object.entries(data.news).forEach(([title]) => {
+    const safeTitlePath = createUrlSlug(title)
+    routes.push(
+      createRouteEntry(`/news/${safeTitlePath}`, title, () => import('../views/NewsPageView.vue'), {
+        title
+      })
+    )
   })
 
   return routes

@@ -2,22 +2,21 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import data from '../../public/atl.json'
-import type{ Project, Projects, ProjectCategory } from '@/types';
+import type { Project, Projects, ProjectCategory } from '@/types'
 
 const router = useRouter()
 
-// Type assertion for data.projects
 const projectsData = data.projects as Projects
 
 const categoryMapping = {
   'arts-and-culture': 'Arts & Culture',
   'city-and-landscape': 'City & Landscape',
-  'commercial': 'Commercial',
-  'hospitality': 'Hospitality'
+  commercial: 'Commercial',
+  hospitality: 'Hospitality'
 } as const
 
 type CategoryKeys = keyof typeof categoryMapping
-type DisplayCategories = typeof categoryMapping[CategoryKeys]
+type DisplayCategories = (typeof categoryMapping)[CategoryKeys]
 
 const isDropdownOpen = ref(false)
 const selectedCategory = ref('Arts & Culture' as DisplayCategories)
@@ -34,14 +33,20 @@ const displayedProjects = computed(() => {
     return []
   }
 
-  return Object.entries(projectsData[categorySlug]).map(([slug, project]) => ({
-    title: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
-    image: project.images[0],
-    location: project.location,
-    year: project.time,
-    slug: slug,
-    categorySlug: categorySlug
-  }))
+  return Object.entries(projectsData[categorySlug])
+    .map(([slug, project]) => ({
+      title: slug
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+        .replace("Specchar", "–"),
+      image: project.images[0],
+      location: project.location,
+      year: project.time,
+      slug: slug,
+      categorySlug: categorySlug
+    }))
+    .sort((a, b) => b.year - a.year)
 })
 
 const toggleDropdown = () => {
@@ -106,17 +111,17 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
       <hr class="hidden sm:flex border-t-2 border-black mt-6 mx-[5%] mb-10" />
 
       <div class="w-[90%] justify-center mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 ">
-          <div 
-            v-for="project in displayedProjects" 
-            :key="project.title" 
-            class="flex flex-col cursor-pointer transition-all duration-500 hover:transform hover:scale-[1.02]" 
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div
+            v-for="project in displayedProjects"
+            :key="project.title"
+            class="flex flex-col cursor-pointer transition-all duration-500 hover:transform hover:scale-[1.02]"
             @click="navigateToProject(project.categorySlug, project.slug)"
           >
-            <img 
-              :src="project.image" 
-              :alt="project.title" 
-              class="w-full h-64 object-cover mb-4 transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80" 
+            <img
+              :src="project.image"
+              :alt="project.title"
+              class="w-full h-72 object-cover mb-4 transition-all duration-500 hover:transform hover:scale-105 hover:opacity-80"
             />
             <div class="flex flex-row justify-between gap-x-fit">
               <h2 class="text-2xl text-white mb-2">{{ project.title }}</h2>

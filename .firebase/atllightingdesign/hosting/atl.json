@@ -92,7 +92,7 @@
         "time": 2013
       },
       "guanyin-altar": {
-        "description": "Suzhou Wang Xiaohui Art Museum is a four-door old Jiangnan house. It is the Suzhou government that provides “Ding Zhai” to Wang Xiaohui free of charge as an art gallery open to the public. This is an art gallery that promotes contemporary works by Wang Xiaohui and famous artists from home and abroad.\n\nThe façade of the building is decorated with stainless steel curtains. During the day, the lines of the building are tough and rigorous. At night, the red facade of the old house in Jiangnan is restored against the light. The Dingzhai building has a deep sense of depth, and the interior and the courtyard form a layered effect. As the main empty space, the exhibition hall takes into account the combination of classical architecture and Wang’s contemporary art, and strives to realize the use of ancient houses. The exhibition hall space uses 0.9m**0.9m light boxes to distribute the entire ceiling. The RGBW lights in the light box are controlled by DMX512. The system realizes dynamic changes, which can not only meet the basic needs of the exhibition halls with bright and uniform space, but also present the works of Wang Xiaohui in a freehand manner on the ceiling; the courtyard has a strong “Suzhou classical garden” feature, in the lighting Adhering to the “quiet, quiet” principle of the garden.\n\nThe project opened in September 2013 and received much attention from the media, the art world and the lighting industry. In 2015, it won the second prize in the Lighting Interior Design Award.",
+        "description": "As the largest contemporary Buddhist building in the world, the Guanyin Altar facilitates Buddhist cultural exhibition, sightseeing, pilgrimage, and international exchange in a 62,000 sqm space.  Combining modern architectural style, Buddhist and traditional Chinese culture, the unique architecture was reinforced by an innovative lighting design. By means of a lighting system integrating functional lighting and artistic lighting show, visitors are immersed in the spirit of Guanyin, “the light of Buddha shines on all living beings”.  To illustrate the culture of Guanyin, a variety of lighting techniques are used to precisely exhibit Buddhist art works and highlight traditional Chinese architectural elements.",
         "images": [
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/guanyin-altar-1.jpg",
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/guanyin-altar-2.jpg",
@@ -160,7 +160,7 @@
         "location": "Xi'an, China",
         "time": 2014
       },
-      "thousand-buddha-hall-–-usnisa-palace": {
+      "thousand-buddha-hall-specchar-usnisa-palace": {
         "description": "The five-story Thousand Buddha Hall on the ground floor of the Unisian Palace is the core visiting space. In the center of the Thousand Buddha Hall, there is a sacred pagoda of the Buddha’s skeleton. It is named as the Great Sacrifice Pagoda, which is the largest indoor Chinese-Tibetan world Pagoda in China. It is surrounded by a thousand statues of Bodhisattva and flying apsaras, creating a magnificent “Buddha’s Heavenly Boundary”.\n\nThe Lighting design is to address the basic visiting function, and more important, to highlight the core of Unisian Palace, the Great Sacrificed Pagonda, and the thousand Buddha statues. Due to the unique space of the hall, the shape of statues, and the three-story platform of the pagoda, an ultra-narrow beam LED lighting projection system in a long distance is adopted. With the intelligent control function, it creates different levels of space atmosphere by outlining the decorative facade through a variety of lighting scenes setup.",
         "images": [
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/thousand-buddha-hall-%E2%80%93-usnisa-palace-1.jpg",
@@ -192,7 +192,7 @@
         "location": "Suzhou, China",
         "time": 2013
       },
-      "zen-state-scenery-–-usnisa-palace": {
+      "zen-state-scenery-specchar-usnisa-palace": {
         "description": "To create a large-scale comprehensive tourist space, Zen State Scenery takes the concept of “human landscape” to integrate natural landscape, Buddhist holy land and humanistic landscape.\n\nIn the center of the hall, a white marble statue of Sakyamuni is lying on a lotus base. ATL consultants considered two main aspects for the lighting design of Zen landscape, one was to meet the functional lighting for the tourist space, the other was to provide a phenomenal effect for Buddhist rituals and performances. ATL consultants developed a solution, a combination of artificial and natural lighting, a changeable divine sky on the top of the hall. It is a daylighting dome, to provide natural sunshine in sunny days, and meanwhile, energy-saving and long lifetime LED high-power spotlights are used to provide comfortable and safe basic lighting for the space under gloomy days and evening. During performance time, dome luminous film can simulate the morning and dusk in a short time to restore the sky at different times. The LED can change color and color temperature, showing a fresh and bright morning, or to simulate the blue sky and white clouds at noon. In Buddhist ritual moments, it can simulate the scene of Buddha Star Nirvana as well.\n\nDALI control technology is used in the solution, which guarantees the stability of lighting fixtures in large space. It enhances lifetime, implements the monitoring of the operation status and reduces the maintenance cost. The lighting management system combines centralized master control with scene and timing control. It is integrated with stage and sound management system to create a real “Human Landscape”.",
         "images": [
           "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/zen-state-scenery-%E2%80%93-usnisa-palace-1.jpg",
@@ -201,6 +201,277 @@
         ],
         "location": "Nanjing, China",
         "time": 2016
+      }
+    },
+    "city-and-landscape": {
+      "bacheng-town": {
+        "description": "Bacheng Town, located in Kunshan City, Jiangsu Province, is the home of the famous Kun Opera. The Old Street in Bacheng, which was built in the Qing Dynasty, not only connects many landmark buildings in the ancient town, but also captures the inheritance and development of Kun Opera. The landscape lighting design and implementation of the Old Street not only restores the history of the town, but also allows visitors to experience the cultural atmosphere of the Kun Opera. Light is projected on white walls naturally, creating a traditional Chinese painting. The warm color temperature lighting highlights the beautiful texture of the wooden building, while emphasizing the extravagant composition of the skyline. Lighting with a variety of colors is used to graze and highlight the stone, wood, bricks of bridges, embankments, pavilions, and pagoda on multiple levels to express the night of the old street with a more dramatic Kun Opera scene.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/bacheng-town-8.jpg"
+        ],
+        "location": "Kunshan, China",
+        "time": 2019
+      },
+      "gou-shan-li": {
+        "description": "Gou Shan Li is a commercial complex with 22 unique historic villas. Located near the famous West Lake in Hangzhou city, it exhibits cultural features of the southern Yangtze River area in the context of historic Hangzhou city.\n\nAfter careful analysis of the historic building structures and surrounding environment, ATL consultants created “Enjoy the Moon Shadow” as the theme of the landscape lighting.  Although the complex is now the headquarters for finance and business, ATL consultants simulated the natural moonlight effect with artificial lights to keep the atmosphere of the picturesque historic residences. Soft natural halos created by LED lamps are used to highlight building facades. Meanwhile, the lighting is projected to achieve the effect of “invisible fixture but visible light”, bringing out an elegant and beautiful environment for the historic Gou Shan Li.\n\n",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gou-shan-li-6.jpg"
+        ],
+        "location": "Hangzhou, China",
+        "time": 2019
+      },
+      "gui-zhong-resort": {
+        "description": "Gui Zong Resort is located at the foothills of Lushan Mountain, a famous scenic hot spring spot in Jiangxi Province.\n\nConsidering the dark surroundings, architectural lighting focused on creating a safe, warm and comfortable environment. LED strips were hidden under the façade, illuminating the eaves so that the perimeter of the building is lit by the reflection of light.  A warm and serene atmosphere was created through bamboo lanterns hung around the building, as well as lights on the lawn, garden and trees.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gui-zhong-resort-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gui-zhong-resort-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gui-zhong-resort-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/gui-zhong-resort-4.jpg"
+        ],
+        "location": "Lushan, China",
+        "time": 2016
+      },
+      "jinling-town": {
+        "description": "Located in Nanjing, China, as the initial phase of Jinling Town, Yan Ji Li is a tourist attraction that reproduces the cultural and architectural legacies of ancient China. The theme park contains Six-Dynasties-style buildings, which include a museum, a hotel, a traditional street market, gardens, creeks, and ponds. The interior and exterior of the buildings, the day and night scenes of the streets, and the landscapes are creatively designed to immerse visitors in the rich culture and elegant lifestyle of the Six Dynasties.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jinling-town-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jinling-town-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jinling-town-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jinling-town-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jinling-town-5.jpg"
+        ],
+        "location": "Nanjing, China",
+        "time": 2020
+      },
+      "lingshan-town-specchar-nianhua-bay": {
+        "description": "Lingshan Town · Nianhua Bay locates on the shore of Taihu Lake in Wuxi, China. It is a world-class Zen culture resort. Covering about 100 hectares, the resort integrates commercial district, ecological wetland, vacation residential area, conference center, and a boutique hotel. It aims to promote green lifestyle with the wisdom of oriental Zen culture.\n\nRespecting architecture and landscape design concepts, ATL consultants focused on the richness of “Zen”, emphasizing the unique poetic mood of “Zen Life” in harmony with nature, with “hidden, soft, simple, beautiful and concise”. Lighting performance is the main starting point to create a new landmark for the revitalization of traditional culture.\n\nThe commercial streets convey a cheerful and pleasant environment, with the lighting based on 2700K warm light color, and the multi-level lighting forms a freehand effect. The lighting is mainly transmitted through the interior, supplemented by signboards, lanterns, underground lamps, and direction lights. Forming a commercial atmosphere, the lighting not only creates a beautiful nightscape but also attracts visitors lingering in the streets. The floodlighting luminaires are hidden to the utmost extent, resulting in the effect of “invisible fixture but visible light”. The position of every lantern is carefully considered, and the Zen effect of the light is formed as “one light one scene”. The ambience light is fully considered in landscape lighting planning. While providing normal basic lighting, the entire space environment is also concerned in landscape lighting, a lantern is part of the landscape, part of the building, and part of the space environment.\n\nThe Lighting design of Lingshan Town · Nianhua Bay won the 2nd prize of Shanghai Magnolia Lighting Design Award 2018, and the 3rd prize of AALD Lighting Design 2016.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-8.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/lingshan-town-%C2%B7-nianhua-bay-9.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2015
+      },
+      "yuan-jia-village": {
+        "description": "The Tong Meng Town (also known historically as Yuan Jia Village) project was part of an important construction project in Henan province in 2017. The project covers an area of 400,000 square meters. It is created to be the first holiday resort in China’s central plain, with the theme “Revitalize the old Yuan Jia Village – eat, play, shop and stay well”. The core of the resort is a village style main street, creating and demonstrating the evolving local culture and custom dating back to the Ming and Qing Dynasties (AD1386 – 1912).  It is also created to be a showcase for ecological and green living style. \n\n ATL consultants designed the village nightscape lighting scheme based on local, rural, and natural elements. The lighting was designed to highlight the buildings and maintain a natural village atmosphere, without needing to use new lighting technologies that are commonly used in city and landscape lighting. To maintain the rustic touch of the buildings, the appearance and shape of lighting fixtures are purposely processed with old treatment. With warm color LED inside, these functional and old-style LED fixtures create a more comfortable and nostalgic night atmosphere.\n\n",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yuan-jia-village-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yuan-jia-village-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yuan-jia-village-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yuan-jia-village-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yuan-jia-village-5.jpg"
+        ],
+        "location": "Hunan, China",
+        "time": 2019
+      }
+    },
+    "commercial": {
+      "jiangning-citizen-center": {
+        "description": "The Jiangning Citizen Center project was divided into two areas: Civil Affairs and Civil Culture, connected by the Civil Hall. The Center provides a one-stop service for the citizens in the Jiangning district of Nanjing City. It includes spaces for centers for women, children, and youth activities, a citizen’s lecture hall, conference centers, a theatre, a university for the elderly, and a government affairs center.\n\nHigh efficient, energy-saving, uniform and brightness was the main consideration of lighting design for public areas, offices and meeting rooms. 4000K light color was chosen for these areas.  The theater and other performance exhibition spaces were mainly based on 3000K light color, creating a more artistic atmosphere. RGBW changeable color strips and LED projection lamps were used in the theatre to allow for different performance needs and to create a dynamic atmosphere.           \n\nA centralized lighting control system was used to maximize the Lighting Power Density (LPD) value and energy-saving of the public building. The project’s goal was to be an environmentally-friendly citizen center which promoted healthy lifestyles. The Center has become a showcase for green and ecological concepts, and is certified as a three stars Green Building in China.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jiangning-citizen-center-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jiangning-citizen-center-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jiangning-citizen-center-3.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/jiangning-citizen-center-4.png"
+        ],
+        "location": "Nanjing, China",
+        "time": 2015
+      },
+      "junkang-spring-experience-centre": {
+        "description": "Junkang Spring is a large, multi-functional “Continuing Care Retirement Community” (CCRC). The experience center of Junkang Spring was built to encourage their customers to explore the community’s excellent facilities and personalized professional services, and to connect customers to the brand. The cultural life area is on the first floor, displaying cultural activities offered in the community that vary from energetic to peaceful, from the material to the spiritual. In addition to the functional experience areas, the professional physiotherapy area on the second floor also has an indoor Chinese garden. The lighting design of the experience center is different from conventional commercial displays. The visual and psychological factors of the elderly are addressed in the design to create a more comfortable and healthy lighting environment.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-8.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-9.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/junkang-spring-experience-centre-10.jpg"
+        ],
+        "location": "Beijing, China",
+        "time": 2019
+      },
+      "k2-pomegranate-club": {
+        "description": "The Pomegranate Club acts as the internal reception function of K2 Group in Beijing. The interior design combined the corporate culture and spirit of contemporary business with unique eastern landscape artistry. The overall decorative style is mainly traditional Chinese.\n\nThe lighting design of the Pomegranate Club is different from the typical commercial clubhouse. After learning and discussing the elements of interior design, ATL consultants worked to maximize the effect of the interior space. The overall space used a 3000K warm white light. In addition to the low glare and high color rendering down lights in the Chinese style ceiling light trough, double rows of LED T5 hard strips were designed to provide a more comfortable light diffusing.\n\nConsidering the different functional space requirements of the club, ATL lighting consultants focused their attention on creating a sense of rhythm within the space. They aimed to create a quiet, comfortable and elegant space that was also convenient for the owners to operate and manage.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-1.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-2.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-3.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-4.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-5.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/k2-pomegranate-club-6.png"
+        ],
+        "location": "Beijing, China",
+        "time": 2017
+      },
+      "nishan-auditorium": {
+        "description": "Next to the Confucian Palace, the Nishan Auditorium is in the Nishan Holy Land Scenic Area of Qufu City, Shandong Province. The project，with a total construction area of 32,000 square meters, faces the holy lake of Mount Nishan and backs against Mount Nishan. It has an excellent natural scenery and deep history. It is a cultural tourism venue, including conferences, banquets, events, exhibitions, and other functions. After the grand opening, Nishan Auditorium will become the permanent site of the Nishan World Civilization Forum.\n\nThe Nishan Auditorium is designed with the traditional decoration style of the Confucian Palace, incorporating many traditional Chinese architectural elements such as columns, buckets, and grilles. Its scale is truly remarkable. In addition to fulfilling the functional requirement, the lighting is required to meet the national conference space and the video broadcast standards. The main hall can accommodate 1,820 guests. To ensure the flow of the enormous number of guests, the top surface adopts a variety of lighting forms such as luminous film, hidden wall washer, and top-emitting chandeliers, while the ground and wall lighting is mainly based on functional downlights. The light environment of the entire space is diversified and consistent with the decorative style.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-auditorium-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-auditorium-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-auditorium-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-auditorium-4.jpg"
+        ],
+        "location": "Qufu City, China",
+        "time": 2019
+      },
+      "shanghai-land-group-headquarters-office": {
+        "description": "The sales headquarters of Shanghai Real Estate Group is located in the Hongqiao Financial Center Building. The interior design style is bright and simplistic.        \n\nConsidering that the office building has a nice view with good natural light, ATL consultants selected the efficient T5 DALI intelligent dimming system with daylight sensors to form a bright, efficient and energy-saving office lighting environment. A dynamic illumination system was specially designed for the reception area. The light color temperature is easily changed from 2700K to 5600K to create an environment that adapted to the rhythm of the human biological clock, changing slowly throughout the day.\n\nThe lighting control system in the meeting room space could also control the curtains to set the scene for conference discussions or for presentations with projections. When the sensor detects no human activity, the conference room lights automatically shut off to save energy.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-1.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-2.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-3.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-4.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-5.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/shanghai-land-group-headquarters-office-6.png"
+        ],
+        "location": "Shanghai, China",
+        "time": 2012
+      },
+      "show-house-specchar-lingshan-zen-town": {
+        "description": "The Showhouse is a beautiful, scenic building located in Lingshan Zen Town, Wuxi.  Bamboo, water, wood and stone were used to create a natural and comfortable Zen space. The lighting design created a relaxed space for the freedom of spiritual and cultural expression.\n\nIn the entrance area, an art piece made with natural bamboo joints was the foreground to a large Chinese ink landscape painting. The lighting design used the method of diffusing to brighten the background painting evenly. The bamboo art created a silhouette effect, creating a dreamlike Zen atmosphere.\n\nOn the second floor, the lighting design of the atrium rest area was soft and simple. A comfortable atmosphere was created through even track lights, which illuminated the top portion of the walls. Two rows of customized lighting fixtures were embedded at the bottom of some bamboo joints to supplement the accent lighting.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/show-house-%E2%80%93-lingshan-zen-town-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/show-house-%E2%80%93-lingshan-zen-town-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/show-house-%E2%80%93-lingshan-zen-town-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/show-house-%E2%80%93-lingshan-zen-town-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/show-house-%E2%80%93-lingshan-zen-town-5.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2018
+      },
+      "wutong-family-sales-center-and-showroom": {
+        "description": "Wutong family is the first community service center for seniors developed by the China Taiping Insurance Group. It is built for the high-end pensioner market. The community is in Shanghai Zhoupu International Medical Park, with a construction area of 290,000 square meters and an estimated investment of CNY 3 billion (Appx. USD 428M). \n\nThe interior design of the sales center was simple and comfortable. The warm white lighting created a bright and relaxing atmosphere. A suspended sky-light box was used to illuminate the display area with natural light. The lighting design of the meeting area combined both direct and indirect illumination, providing a more private atmosphere.           \n\nThe model house displays different activities of seniors’ daily life. In addition to the display function, the lighting design considered special accommodations required by the occupants. Due to challenges with vision and cognition, it is essential that the spaces are well lit and have uniformity of light dispersed throughout the space. The space is dominated by 3000K/4000K neutral light, creating a bright and comfortable home environment. In the model balconies and windows, 6500K high-color temperature ceiling lamps are used to simulate outdoor visual effects in an indoor closed space.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/wutong-family-sales-center-and-showroom-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/wutong-family-sales-center-and-showroom-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/wutong-family-sales-center-and-showroom-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/wutong-family-sales-center-and-showroom-4.jpg"
+        ],
+        "location": "Shanghai, China",
+        "time": 2018
+      }
+    },
+    "hospitality": {
+      "boromedo-hotel": {
+        "description": "Boromedo Hotel and International Conference Center is in the Zen town of Lingshan, Wuxi. It is a recreational resort hotel with a Buddhist and Zen culture theme.  It is also the permanent site to host the World Buddhist Forum. The hotel has more than 400 guest rooms and 13 conference rooms. The largest banquet hall is 1,500 square meters, which can accommodate nearly 1,000 people.\n\nThe interior design theme contains three key elements: Flower, Smile, and Bay. In the public spaces, the guest rooms and the conference center, natural elements, such as mountains and clouds, ran through the outline of the interior decorative components. Ancient elements such as cloud panels, bamboo knots and square lanterns were worked into lighting fixtures and furniture.           \n\nLighting was carefully designed for every space. All of the lighting fixtures were equipped with high efficiency, energy saving and low glare LEDs. The color rendering of the LED light source was more than 90, providing a high-quality lighting environment. The design not only enhanced visual comfort but also highlighted the artistic expression of the space and created a comfortable Zen atmosphere for every visitor.\n\nThe hotel lobby, public corridors, elevator halls, and other public spaces used an intelligent lighting dimming control system that can be programmed to adapt to the changing natural environment.  This system met many different functional needs, while maximizing energy saving.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/boromedo-hotel-8.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2016
+      },
+      "club-house-of-green-wave-gallery": {
+        "description": "The Green Wave Gallery in Shanghai Old Town is a restaurant famous for hosting state banquet receptions. In addition to the cuisine, guests are attracted to the restaurant due to the interior design and dining experience.\n\nIn order to upgrade the interior environment, Green Wave Gallery designated Club 7, a 400 square meter two-story building as fine dining space. Without changing the original layout and form of space, the interior renovation added silk screens and throw pillows with a soft and light color scheme.\n\nTo create a bright and comfortable environment for fine dining experience, energy-saving, efficient LED lamps were installed.  While the original decorative pendant lamps were remained, LED spotlights with a wider beam were added to illuminate the dishes and create an intimate atmosphere for the patrons. ",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/club-house-of-green-wave-gallery-8.jpg"
+        ],
+        "location": "Shanghai, China",
+        "time": 2019
+      },
+      "fangxia-hotel": {
+        "description": "Located in the renowned tourist town, Nianhuawan in Wuxi, China, Fangxia is a boutique hotel with a motif of healthy sleep and lifestyle change courses in the context of Zen culture.\n\nIn Zen, Fangxia means relinquishing one’s mundane desires and finding their true self. The architectural environment of the Fangxia hotel inspires guests to relax their minds and bodies and let go of their obsessions from the moment they step into the hotel.\n\nThe light emanated from the indoors and the landscape light presents a welcoming atmosphere at the building entrance. In the courtyard, light and shadow create a peaceful and relaxing space. The human centric and circadian lighting system mimics the natural daylight during the daytime and enables a personalized sleeping environment in every guestroom during the evening. The touch screen allows guests to customize the light color and the healing music to set up a meditation atmosphere in the room.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/fangxia-hotel-6.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2023
+      },
+      "nianhua-bay-guesthouses": {
+        "description": "There are twenty-five different themed guesthouses in Nian Hua Bay. Each guesthouse had a unique Zen theme expressing varying regional and architectural characteristics.         \n\nThe overall lighting design for these rooms was to create a bright, cozy, and comfortable atmosphere. A variety of lighting forms and installation methods were used to complement each of the different interior design theme elements. In the hallways, dining room and other public spaces, functional lighting was the primary consideration, giving guests a warm homey feel. Based on the different architectural layouts, sub-loop and centralized lighting control systems were used to manage the public corridors. These systems could control both the semi-outdoor and the fully enclosed indoor corridor space, maximizing the usage of natural light, saving on operation costs, and offering ease of maintenance.          \n\nThe overall lighting design of the guesthouses created a comfortable atmosphere through efficient lamp layout design, classic lamp selection and convenient operation and management.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-7.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-8.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nianhua-bay-guesthouses-9.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2018
+      },
+      "nishan-binshe-hotel": {
+        "description": "Nishan Binshe Hotel is located in Qufu, Shandong, the birthplace of Confucius. The construction area of the hotel is 45,000 sqm, and includes more than 300 guest rooms, and other various facilities, such as restaurants, function rooms, banquet halls, a swimming pool, etc. It is a building compound for collective functions of accommodation, dining, conference, exhibition, cultural experience, and tourism.\n\nSurrounded by scenic lake and mountains in the Nishan Holy Land resort, the hotel interior is designed on the theme of “Farming-reading Culture”. A leisurely and quiet atmosphere is created by multi-level indirect lighting. The decorative materials and artworks are highlighted by accent lighting. Lighting accomplishes both functional requirements and decorative features.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-binshe-hotel-1.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-binshe-hotel-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-binshe-hotel-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-binshe-hotel-4.png",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/nishan-binshe-hotel-5.png"
+        ],
+        "location": "Qufu City, China",
+        "time": 2020
+      },
+      "walnew-house": {
+        "description": "Walnew House consists of a restaurant, a lounge, and some independent small meeting rooms. The design integrated elements of art and elegance to create a relaxed atmosphere.\n\nATL consultants adopted an intelligent lighting system for decorative and artistic effect. Functional applications were managed from one control panel.  Each space had unique art chandeliers and wall lamps to create a fascinating interplay of lights and shadows. A series of spotlights were used to illuminate the light-colored shells on stainless steel cables in a hallway with mirrors on both sides, creating the illusion of an infinite space.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-6.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/walnew-house-7.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2013
+      },
+      "yunshu-therapy-house": {
+        "description": "The Yunshu therapy house is a two-story building for Zen recuperation and therapy courses. In the foyer, multilayered indirect lighting guides guests into a quiet and warm Zen world. The tearoom in the reception area is designed with a relaxing and comfortable lighting environment with minimized luminaire quantity. The meditation room is completely enclosed without any natural light. Consequently, a DMX-controlled RGBW lighting system sets up an immersive tranquil and gentle atmosphere. As requested by the therapists, the system enables them to guide meditation in a changing lighting environment, from soft white to dark warm red to bright white light.  The sound therapy room is on the basement floor. Natural light from the lightwell is integrated with indirect artificial light to create a variety of lighting modes based on the needs of the sound therapy course. With a pyramidal ceiling, the spacious yoga room hosts many group yoga activities. An artificial skylight illuminates the surroundings of the ceiling and diffuses circadian lighting to the whole yoga room.",
+        "images": [
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-5.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-1.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-2.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-3.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-4.jpg",
+          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/yunshu-therapy-house-6.jpg"
+        ],
+        "location": "Wuxi, China",
+        "time": 2023
       }
     }
   }

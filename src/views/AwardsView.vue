@@ -45,11 +45,11 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
 
       <hr class="border-t-2 border-black sm:mt-6 mx-[5%]" />
 
-      <div class="w-[100%] justify-center mx-auto grid sm:grid-cols-2">
+      <div class="w-[90%] justify-center mx-auto grid sm:grid-cols-2">
         <div
           v-for="award in awards"
           :key="award.title"
-          class="flex flex-col items-center h-[40vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:bg-gray-950 hover:scale-[1.02]"
+          class="flex flex-col items-center h-[60vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:bg-gray-950 hover:scale-[1.02]"
           @click="navigateToProject(award.category, award.linktitle)"
         >
           <div class="w-full overflow-hidden">

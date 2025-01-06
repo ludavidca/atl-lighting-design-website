@@ -134,7 +134,8 @@ onUnmounted(() => {
               <p class="font-medium text-white mb-1">Connect with us:</p>              
               <p>
                 <a href="mailto:art@atl-design.com" class=" mr-4 text-white">art@atl-design.com</a>
-                <a href="+8602152137649" class="underline">Telephone</a>
+                <br></br>
+                <a href="+8602152137649" class="underline mr-4 text-white">Telephone</a>
               </p>
             </div>
             <p class="text-white text-xs">© 2024 ATL Lighting Design</p>

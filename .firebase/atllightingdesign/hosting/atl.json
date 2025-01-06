@@ -9,30 +9,22 @@
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/confucian-palace-1.jpg"
     },
     "five-seal-mandala": {
-      "awards": [
-        "1st Prize of Indoor Lighting Design - CIES 2013"
-      ],
+      "awards": ["1st Prize of Indoor Lighting Design - CIES 2013"],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/five-seal-mandala-1.jpg"
     },
     "guanyin-altar": {
-      "awards": [
-        "Award of Excellence – IALD 2022"
-      ],
+      "awards": ["Award of Excellence – IALD 2022"],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/guanyin-altar-1.jpg"
     },
     "jinling-town": {
-      "awards": [
-        "1st Prize of Outdoor Lighting Design – CIES 2022"
-      ],
+      "awards": ["1st Prize of Outdoor Lighting Design – CIES 2022"],
       "category": "city-and-landscape",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/jinling-town-1.jpg"
     },
     "lingshan-buddhist-palace": {
-      "awards": [
-        "1st Prize of Indoor Lighting Design- CIES 2009"
-      ],
+      "awards": ["1st Prize of Indoor Lighting Design- CIES 2009"],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/lingshan-buddhist-palace-1.jpg"
     },
@@ -45,23 +37,17 @@
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/lingshan-town-%C2%B7-nianhua-bay-1.jpg"
     },
     "nishan-auditorium": {
-      "awards": [
-        "2nd  Prize of Indoor Lighting Design – CIES 2022"
-      ],
+      "awards": ["2nd  Prize of Indoor Lighting Design – CIES 2022"],
       "category": "commercial",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/nishan-auditorium-1.jpg"
     },
     "usnisa-palace": {
-      "awards": [
-        "1st Prize of Indoor Lighting Design - CIES 2017"
-      ],
+      "awards": ["1st Prize of Indoor Lighting Design - CIES 2017"],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/usnisa-palace-1.jpg"
     },
     "wang-xiaohui-art-museum": {
-      "awards": [
-        "2nd Prize of Indoor Lighting Design - CIES 2014"
-      ],
+      "awards": ["2nd Prize of Indoor Lighting Design - CIES 2014"],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/wang-xiaohui-art-museum-1.jpg"
     }
@@ -112,7 +98,7 @@
         "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/atl-shanghai-new-office-2.jpg"
       ]
     },
-    "confucian-palace": {
+    "completion-of-the-confucian-palace": {
       "article": "Working together with Architects, interior designers, lighting suppliers, and contractors for three years, ATL Lighting Design has completed another masterpiece, Confucian Palace, which is located in the hometown of Confucius, Qufu, Shandong province.",
       "date": "\"2019-03-01 00:00:00\"",
       "images": [
@@ -168,20 +154,6 @@
   },
   "projects": {
     "arts-and-culture": {
-      "confucian-palace": {
-        "description": "Located in the birthplace of Confucius, Nishan, about 25 kilometers southeast of Qufu, China, the Confucian Palace was built to honor Confucius and his disciples, and to demonstrate Confucianism and related Chinese cultures.\n\nThe lighting design covers a 65,000 sqm interior space, composed of traditional halls, auditoriums and amenities. Five functional halls are named after the Five Virtues of Confucianism: the halls of Benevolence, Righteousness, Courtesy, Wisdom and Loyalty. The ancient Chinese-style architectural structures, such as columns, Tou-kung and beams are extensively adopted in the Palace.\n\nThe challenge of lighting design is not only to provide various lighting scenes to fulfill multiple functions of each space, but also to highlight Confucius’ profound influence on Chinese people and culture through the interior design of the Palace. The lighting seamlessly integrates with traditional Chinese-style architecture, while adds another unique impressive layer.   \n\nThousands of customized Chinese traditional LED candlesticks controlled by a DMX521 system flicker throughout the Palace and symbolize “The Light of Confucianism Shines Forever”. Dozens of LED candle pendants are used in the Hall of Benevolence to create the ambience of a traditional Chinese library. Together with a large media screen, each LED candle in the pendants and every LED lighted bookshelf can be synchronized to present a five-minute light show called “The Power of Benevolence”.  \n\nFour distinctive small halls of Righteousness, Courtesy, Wisdom and Loyalty represent four legendary beasts in Chinese culture. Lighting matches interior decoration to create four different color atmospheres for the four halls respectively.  \n\nTo comply with energy code, luminaires are equipped with >100lm/w LED modules, and most of them are managed by lighting control systems with energy-saving mode. Meanwhile, customized and concealed luminaries are requested to use replaceable LED modules for both initial and maintenance cost considerations",
-        "images": [
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-1.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-2.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-3.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-4.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-5.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-6.jpg",
-          "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-7.jpg"
-        ],
-        "location": "Nishan, China",
-        "time": 2019
-      },
       "five-seal-mandala": {
         "description": "Located in the Lingshan scenic area, Five Seal Mandala is a Tibetan Buddhist style building serving as an exhibition for Tibetan Buddhist culture.             \n\nAfter in-depth discussions with interior designers, ATL developed a lighting scheme with 10,000 butter lanterns on all sides to create the atmosphere of a Tibetan Buddhist temple. Butter lanterns are customized from LED light sources, with brightness and twinkle controlled by a DMX512 lighting control system. The effect of flashing lights is similar to traditional butter lamps with glass covers found in many Tibetan Buddhist temples.\n\nSince their grand opening, Five Seal Mandala has hosted many Tibetan Buddhists from all over China. This project won the first prize of lighting design by CIEC in 2013",
         "images": [

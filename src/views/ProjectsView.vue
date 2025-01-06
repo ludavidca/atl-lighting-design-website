@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import data from '../../public/atl.json'
 import type { Project, Projects, ProjectCategory } from '@/types'
@@ -19,12 +19,25 @@ type CategoryKeys = keyof typeof categoryMapping
 type DisplayCategories = (typeof categoryMapping)[CategoryKeys]
 
 const isDropdownOpen = ref(false)
-const selectedCategory = ref('Arts & Culture' as DisplayCategories)
+
+const getInitialCategory = (): DisplayCategories => {
+  const savedCategory = localStorage.getItem('selectedCategory')
+  return (savedCategory && Object.values(categoryMapping).includes(savedCategory as DisplayCategories))
+    ? (savedCategory as DisplayCategories)
+    : 'Arts & Culture'
+}
+
+const selectedCategory = ref(getInitialCategory())
+
+const selectCategory = (category: DisplayCategories) => {
+  selectedCategory.value = category
+  localStorage.setItem('selectedCategory', category)
+  isDropdownOpen.value = false
+}
 
 const categories = Object.values(categoryMapping)
 
 const displayedProjects = computed(() => {
-  // Convert display category name back to slug
   const categorySlug = Object.entries(categoryMapping).find(
     ([_, display]) => display === selectedCategory.value
   )?.[0] as CategoryKeys | undefined
@@ -51,11 +64,6 @@ const displayedProjects = computed(() => {
 
 const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value
-}
-
-const selectCategory = (category: DisplayCategories) => {
-  selectedCategory.value = category
-  isDropdownOpen.value = false
 }
 
 const navigateToProject = (categorySlug: string, projectSlug: string) => {
@@ -108,7 +116,7 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
         </div>
       </div>
 
-      <hr class="hidden sm:flex border-t-2 border-black mt-6 mx-[5%] mb-10" />
+      <hr class="hidden sm:flex border-t-2 border-black mt-6 mx-[5%]" />
 
       <div class="w-[90%] justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">

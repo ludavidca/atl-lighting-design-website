@@ -9,22 +9,30 @@
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/confucian-palace-1.jpg"
     },
     "five-seal-mandala": {
-      "awards": ["1st Prize of Indoor Lighting Design - CIES 2013"],
+      "awards": [
+        "1st Prize of Indoor Lighting Design - CIES 2013"
+      ],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/five-seal-mandala-1.jpg"
     },
     "guanyin-altar": {
-      "awards": ["Award of Excellence – IALD 2022"],
+      "awards": [
+        "Award of Excellence – IALD 2022"
+      ],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/guanyin-altar-1.jpg"
     },
     "jinling-town": {
-      "awards": ["1st Prize of Outdoor Lighting Design – CIES 2022"],
+      "awards": [
+        "1st Prize of Outdoor Lighting Design – CIES 2022"
+      ],
       "category": "city-and-landscape",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/jinling-town-1.jpg"
     },
     "lingshan-buddhist-palace": {
-      "awards": ["1st Prize of Indoor Lighting Design- CIES 2009"],
+      "awards": [
+        "1st Prize of Indoor Lighting Design- CIES 2009"
+      ],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/lingshan-buddhist-palace-1.jpg"
     },
@@ -37,28 +45,124 @@
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/lingshan-town-%C2%B7-nianhua-bay-1.jpg"
     },
     "nishan-auditorium": {
-      "awards": ["2nd  Prize of Indoor Lighting Design – CIES 2022"],
+      "awards": [
+        "2nd  Prize of Indoor Lighting Design – CIES 2022"
+      ],
       "category": "commercial",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/nishan-auditorium-1.jpg"
     },
     "usnisa-palace": {
-      "awards": ["1st Prize of Indoor Lighting Design - CIES 2017"],
+      "awards": [
+        "1st Prize of Indoor Lighting Design - CIES 2017"
+      ],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/usnisa-palace-1.jpg"
     },
     "wang-xiaohui-art-museum": {
-      "awards": ["2nd Prize of Indoor Lighting Design - CIES 2014"],
+      "awards": [
+        "2nd Prize of Indoor Lighting Design - CIES 2014"
+      ],
       "category": "arts-and-culture",
       "image": "https://storage.googleapis.com/atllightingdesign.appspot.com/awards/wang-xiaohui-art-museum-1.jpg"
     }
   },
   "news": {
+    "1st-buddhist-architectural-lighting-design-forum": {
+      "article": "From November 16th to 18th, 2018, the “First Buddhist Architectural Lighting Design Forum” was successfully organized by China Illumination Engineering Society (CIES) and professional medium platform “First Design” in Wuxi, Jiangsu. There were 231 participates from 23 cities in China, including architects, interior designers, lighting designers, contractors, system integrators, lighting manufactures, and developers. Richard Wang, general manager and design director of ATL Lighting Design (Shanghai) Company gave a keynote speech on “Exploration of Lighting Design in Buddhist Cultural Buildings” in the forum. Richard shared case studies of ATL’s award-winning Buddhist cultural projects, highlighting the crucial role of lighting design in the integrated expression of Buddhist culture with architecture and environment.",
+      "date": "\"2018-12-01 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/1st-buddhist-architectural-lighting-design-forum-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/1st-buddhist-architectural-lighting-design-forum-2.jpg"
+      ]
+    },
+    "2019-company-outing": {
+      "article": "Company outing is a tradition to get every designer together and unwind in a scenic place spot for a few days. From Sep 9 to Sep 11, 2019, with colleagues from new Xi’an office, ATL team climbed the Mount Tai, a mountain a mountain of historical and cultural significance located in Shandong province, China.\n\n",
+      "date": "\"2019-09-09 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2019-company-outing-1.jpg"
+      ]
+    },
+    "2020-ies-illumination-award-of-excellence": {
+      "article": "ATL design team was recognized by IES for 2020 IES Illumination Award of Excellence in the lighting design of Confucian Palace. Composed of auditoriums, amenities and five traditional halls, the 65,000-sq palace built to honor Confucius and his disciples required lighting that could provide various scenes to fulfill the functions of each space, while also highlighting elements of the interior design that symbolize Confucius’s influence on Chinese people and culture.",
+      "date": "\"2020-08-24 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2020-ies-illumination-award-of-excellence-1.jpg"
+      ]
+    },
     "2022-darc-awards-shortlist": {
       "article": "The Nianhaucang designed by ATL’s outdoor team is nominated in the shortlist of Low Budget Structures – 2022 [d]arc awards, while the Fangxia and Yunshu from indoor team is also in the shortlist of High Budget Places. The [d]arc awards are rooted in the arc and darc magazines with the reputation as being the most widely read and respected lighting design publications in the world. The shortlist has been chosen by an international jury of lighting designers.",
       "date": "\"2023-02-10 00:00:00\"",
       "images": [
         "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-1.jpg",
-        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-1.jpg"
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-darc-awards-shortlist-2.jpg"
+      ]
+    },
+    "2022-iald-award-of-excellence": {
+      "article": "CHICAGO, IL USA | The global lighting community gathered online for the third time to honor the winners of the 39th Annual International Association of Lighting Designers (IALD) International Lighting Design Awards, presented by Acuity Brands, the longest running and one of the most prestigious lighting design awards programs in existence. Twenty-two projects were on display from eleven countries—including exteriors, interiors, memorials, hospitality, museums, tourism, and places of worship.\n\nThe design of the Guanyin Altar in Zhoushan, Zhejiang, China with lighting design by Shanghai ATL Lighting Design Co., Ltd took home an IALD Award of Excellence.",
+      "date": "\"2022-06-09 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/2022-iald-award-of-excellence-1.png"
+      ]
+    },
+    "atl-shanghai-new-office": {
+      "article": "ATL Shanghai moved into an iconic building located in the Urban Best Practice Area on June 28, 2020. As a green building showcase, the new office building is the Alsace Pavilion during Expo Shanghai 2010. Equipped with a water curtained solar panel on the south facade, the building effectively utilizes green energy upon the changes of outdoor temperature and sunlight intensity. Inside the building, a Human Centric Lighting system demonstrates the cutting-edge lighting technology to maximize energy saving and achieve the highest standard of Well Building V2.",
+      "date": "\"2020-06-28 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/atl-shanghai-new-office-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/atl-shanghai-new-office-2.jpg"
+      ]
+    },
+    "confucian-palace": {
+      "article": "Working together with Architects, interior designers, lighting suppliers, and contractors for three years, ATL Lighting Design has completed another masterpiece, Confucian Palace, which is located in the hometown of Confucius, Qufu, Shandong province.",
+      "date": "\"2019-03-01 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-2.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-3.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/confucian-palace-4.jpg"
+      ]
+    },
+    "learning-never-stops": {
+      "article": "To pursue the design excellence, ATL continuously cultivates the design team to be a learning organization. In the beginning of every year, ATL sets up the annual learning plan, and the 2019 theme is “Learning Never Stops”. ATL annual learning scheme has been formed with designated subject in a bi-weekly basis. The 1st session was facilitated by technical director Steve Zhang with the topic of “New State Lighting Regulation and the Impact to Design Process” on February 18th, 2019.",
+      "date": "\"2019-02-20 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/learning-never-stops-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/learning-never-stops-2.png"
+      ]
+    },
+    "led-technology-workshop": {
+      "article": "As one of the leading lighting design companies in China, ATL Lighting Design always takes initiative to adopt cutting-edge lighting technology in new projects, where architecture and lighting perfectly combine together, create significant additional value to customers. On April 19th, Pascal Kang and Cindy He from Samsung LED, and ATL designers conducted a workshop. Samsung LED specialists introduced the latest LED and smart lighting technology and the best LED and smart lighting cases around world. ATL designers shared their lighting design practice in LED and lighting control applications in the workshop.",
+      "date": "\"2019-04-20 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/led-technology-workshop-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/led-technology-workshop-2.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/led-technology-workshop-3.jpg"
+      ]
+    },
+    "museum-lighting-workshop": {
+      "article": "As one of the leading lighting design companies in China, ATL Lighting Design always takes initiative to adopt cutting-edge lighting technology in new projects, where architecture and lighting perfectly combine together, create significant additional value to customers. On April 19th, Pascal Kang and Cindy He from Samsung LED, and ATL designers conducted a workshop. Samsung LED specialists introduced the latest LED and smart lighting technology and the best LED and smart lighting cases around world. ATL designers shared their lighting design practice in LED and lighting control applications in the workshop.",
+      "date": "\"2019-05-12 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/museum-lighting-workshop-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/museum-lighting-workshop-2.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/museum-lighting-workshop-3.jpg"
+      ]
+    },
+    "new-technology-and-application-workshop": {
+      "article": "ATL is a professional architectural lighting design and consulting company.  As a learning organization, ATL continuously studies, explores and adopts leading-edge technology to create value for customers and the society.  To address the challenge in the most dynamic and fast growing China market, ATL Shanghai and Signify China organized a new technology and application workshop in ATL Shanghai Office on July 19, 2019.\n\n",
+      "date": "\"2019-07-19 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/new-technology-and-application-workshop-1.jpg",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/new-technology-and-application-workshop-2.jpg"
+      ]
+    },
+    "vivid-sydney-2019-field-trip": {
+      "article": "A good lighting design can be the finishing touch of a building. Lighting designers shall consider both psychological and physical needs of human beings. ATL learns from best practice, conducting field trip of world class landmark lighting projects every year. Back from the Vivid Sydney 2019, the biggest festival of lights, music and ideas in the world, Richard shared his observations and reflections from the light arts in Sydney, including Opera House and Sydney Bay Bridge.",
+      "date": "\"2019-06-21 00:00:00\"",
+      "images": [
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/field-trip-%E2%80%93-vivid-sydney-2019-1.png",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/field-trip-%E2%80%93-vivid-sydney-2019-2.png",
+        "https://storage.googleapis.com/atllightingdesign.appspot.com/projects/field-trip-%E2%80%93-vivid-sydney-2019-3.jpg"
       ]
     }
   },

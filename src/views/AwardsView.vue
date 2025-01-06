@@ -49,7 +49,7 @@ const navigateToProject = (categorySlug: string, projectSlug: string) => {
         <div
           v-for="award in awards"
           :key="award.title"
-          class="flex flex-col items-center h-[60vh] p-4 m-4 rounded-md transition-all duration-500 hover:transform hover:bg-gray-950 hover:scale-[1.02]"
+          class="flex flex-col items-center mt-[10%] sm:mt-0 sm:h-[60vh] sm:p-4 sm:m-4 rounded-md transition-all duration-500 hover:transform hover:bg-gray-950 hover:scale-[1.02]"
           @click="navigateToProject(award.category, award.linktitle)"
         >
           <div class="w-full overflow-hidden">

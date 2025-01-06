@@ -53,7 +53,7 @@ const currentNews = computed(() => {
         <p class="text-white text-2xl sm:text-4xl pb-3 text-center">{{ currentNews?.title }}</p>
       </div>
 
-      <div class="hidden sm:flex flex-row items-center gap-x-3">
+      <div class="hidden flex-row items-center gap-x-3">
         <p class="text-white font-normal text-lg">Next Article</p>
         <div class="rotate-180">
           <img src="/ui/smallArrow.svg" class="w-4" />
